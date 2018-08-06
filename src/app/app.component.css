@@ -1,0 +1,6 @@
+*{
+  margin-left: -5px;
+}
+router-outlet{
+  height: 100%;
+}

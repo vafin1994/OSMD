@@ -1,0 +1,31 @@
+.img {
+  background-image: url(../../assets/35-big.jpg);
+  background-position: center;
+  text-align: center;
+  color: white;
+  text-shadow: black 1px 1px 0, black -1px -1px 0,
+  black -1px 1px 0, black 1px -1px 0;
+}
+
+.hoz {
+
+  height: 100%;
+  width: 100%;
+
+}
+
+mat-grid-list {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: -36px;
+}
+
+mat-grid-tile{
+  text-align: center;
+}
+a{
+  line-height: 22px;
+  padding-top: 10px;
+  width: 100%;
+  color: white;
+}

@@ -1,0 +1,12 @@
+
+mat-card{
+  background-color: lightblue;
+  width: 400px;
+}
+mat-card-title{
+  font-weight: bold;
+}
+
+.signupForm{
+  height: 500px;
+}

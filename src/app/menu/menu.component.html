@@ -1,0 +1,31 @@
+<mat-grid-list cols="10" rowHeight="60px">
+
+  <mat-grid-tile class="logo" fxFlex>
+      <a routerLink="aboutCompany" class="imgLogo" fxLayoutAlign="end center">
+        <img src="../../assets/favicon.ico" alt="Logo">
+      </a>
+  </mat-grid-tile>
+  <mat-grid-tile *ngFor="let m of menuList" (click)="isActive()" >
+    <a routerLink="{{m.link}}"  fxLayoutAlign="center center">
+      <div class="menuItem">
+        {{m.name}}
+      </div>
+    </a>
+  </mat-grid-tile>
+  <mat-grid-tile class="logo">
+  </mat-grid-tile>
+</mat-grid-list>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+*{
+  background-color: #aed581;
+}
+mat-grid-tile{
+
+}
+img{
+  width: 60px;
+  height: 30px;
+}
+.adress{
+  text-align: center;
+}
