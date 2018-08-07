@@ -1,13 +1,14 @@
-*{
-  background-color: #aed581;
+.wrap {
+    height: 90px;
+    background-color: #aed581;
+    color: dimgrey;
 }
-mat-grid-tile{
 
+.grid {
+    margin: auto;
+    width: 1024px;
 }
-img{
-  width: 60px;
-  height: 30px;
-}
-.adress{
-  text-align: center;
+
+.grid:hover {
+  color: black;
 }

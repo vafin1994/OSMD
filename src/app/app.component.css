@@ -1,6 +1,4 @@
 *{
-  margin-left: -5px;
-}
-router-outlet{
-  height: 100%;
+    margin: 0;
+    padding: 0;
 }
