@@ -1,0 +1,12 @@
+.wrap{
+    width: 1024px;
+    margin: auto;
+}
+mat-card{
+    height: 325px;
+    width: 425px;
+}
+img{
+    height: 290px;
+    width: 420px;
+}

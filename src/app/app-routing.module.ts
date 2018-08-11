@@ -9,7 +9,8 @@ import {ContactsComponent} from './contacts/contacts.component';
 import {GalleryComponent} from './gallery/gallery.component';
 import {LoginComponent} from './login/login.component';
 import {OsmdCreationComponent} from './osmd-creation/osmd-creation.component';
-import {ArticleComponent} from "./news/article/article.component";
+import {ArticleComponent} from './news/article/article.component';
+import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
 
 const routes: Routes = [
     {path: 'aboutCompany', component: AboutCompanyComponent},
@@ -23,6 +24,7 @@ const routes: Routes = [
     {path: 'gallery', component: GalleryComponent},
     {path: 'login', component: LoginComponent},
     {path: 'article', component: ArticleComponent},
+    {path: 'vacancy', component: VacancyComponent},
 ];
 
 @NgModule({

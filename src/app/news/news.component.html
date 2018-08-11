@@ -1,4 +1,4 @@
-<div class="wrap">
+<div class="wrap1">
     <div class="img" fxFlex>
         <h2>
             Новости и объявления
@@ -6,7 +6,7 @@
     </div>
 </div>
 <div class="wrap">
-    <mat-grid-list cols="2" rowHeight="1:1">
+    <mat-grid-list cols="2" gutterSize="-20px" >
         <mat-grid-tile *ngFor="let n of newsList">
             <a routerLink="/article">
                 <mat-card>
@@ -15,7 +15,7 @@
                         <mat-divider></mat-divider>
                     </mat-card-title>
 
-                    <img mat-card-image src="{{n.img}}"
+                    <img src="{{n.img}}"
                          alt="Photo of a Shiba Inu">
                     <mat-card-content>
                         {{n.content}}
@@ -24,5 +24,4 @@
             </a>
         </mat-grid-tile>
     </mat-grid-list>
-
 </div>

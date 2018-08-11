@@ -1,11 +1,11 @@
 .wrap {
-    background-color: #aed581;
+    background-color: #98b9ab;
     height: 60px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 mat-grid-list {
-
-    background-color: #aed581;
+    background-color: #98b9ab;
     text-align: center;
 }
 
@@ -24,24 +24,24 @@ a {
 }
 
 .logo:hover {
-    background-color: #aed581;
+    background-color: #98b9ab;
 }
 
 .imgLogo:hover {
-    background-color: #aed581;
+    background-color: #98b9ab;
 }
 
 mat-grid-tile:hover {
-    background-color: #81F79F;
+    background-color: lightgray;
     height: 100%;
 }
 
 .menuItem:active {
-    background-color: #81F79F;
+    background-color: lightgray;
 }
 
 .active {
-    background-color: white;
+    background-color: lightgray;
 }
 
 .logo {

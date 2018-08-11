@@ -4,12 +4,12 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
-    MatButtonModule, MatCardModule, MatDividerModule, MatGridListModule,
-    MatIconModule, MatInputModule,
-    MatMenuModule,
-    MatSelectModule,
-    MatTabsModule,
-    MatToolbarModule
+  MatButtonModule, MatCardModule, MatDividerModule, MatExpansionModule, MatGridListModule,
+  MatIconModule, MatInputModule,
+  MatMenuModule,
+  MatSelectModule,
+  MatTabsModule,
+  MatToolbarModule
 } from '@angular/material';
 import {HeaderComponent} from './header/header.component';
 import {MenuComponent} from './menu/menu.component';
@@ -29,6 +29,7 @@ import {OsmdCreationComponent} from './osmd-creation/osmd-creation.component';
 import {FooterComponent} from './footer/footer.component';
 import {ContentComponent} from './about-company/content/content.component';
 import { ArticleComponent } from './news/article/article.component';
+import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { ArticleComponent } from './news/article/article.component';
         FooterComponent,
         ContentComponent,
         ArticleComponent,
+        VacancyComponent,
     ],
     imports: [
         BrowserModule,
@@ -66,6 +68,7 @@ import { ArticleComponent } from './news/article/article.component';
         MatCardModule,
         MatDividerModule,
         FlexLayoutModule,
+        MatExpansionModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

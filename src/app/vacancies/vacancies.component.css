@@ -1,0 +1,37 @@
+.body{
+    min-height: calc(100vh - 170px);
+}
+.wrap {
+    margin: auto;
+    max-width: 1024px;
+}
+
+.img {
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position-y: -158px;
+    height: 115px;
+    border: 1px solid transparent;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    height: 10px;
+    font-size: 36px;
+    text-align: center;
+    border: 1px solid transparent;
+}
+mat-card{
+    text-align: justify;
+    height: 120px;
+    max-width: 420px;
+    transition: all 0.3s ease-out;
+}
+a{
+    text-decoration: none;
+}
+mat-card:hover{
+    background-color: rgba(55, 55, 65, 0.1);
+    margin-top: -20px;
+}
+

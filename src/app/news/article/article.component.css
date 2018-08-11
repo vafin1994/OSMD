@@ -7,10 +7,9 @@
     display: inline-block;
     margin: auto;
     max-width: 1024px;
-    background-repeat: no-repeat;
-    background-position-y: -237px;
     height: 115px;
-    background-image: url("../../../assets/Где-лучше-всего-смотреть-новости-1024x746.png");
+    background-image: url("../../../assets/osmd.jpg");\background-repeat: no-repeat;
+    background-position-y: 0px;
     border: 1px solid transparent;
 }
 

@@ -1,6 +1,6 @@
 <div class="wrap">
-    <h2>Lorem ipsum dolor sit</h2>
-    <mat-grid-list cols="5" gutterSize="15px">
+    <h2 class="compTitle">Lorem ipsum dolor sit</h2>
+    <mat-grid-list cols="5" gutterSize="20px" rowHeight="250px">
         <mat-grid-tile [colspan]="3">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur autem commodi consequatur cupiditate
@@ -13,13 +13,13 @@
             </p>
         </mat-grid-tile>
         <mat-grid-tile [colspan]="2">
-            <img src="../../../assets/35-big.jpg" alt="photo1">
+            <img src="../../../assets/f2.png" alt="photo1">
         </mat-grid-tile>
 
     </mat-grid-list>
-    <mat-grid-list cols="5" gutterSize="15px">
+    <mat-grid-list cols="5" rowHeight="250px" gutterSize="15px">
         <mat-grid-tile [colspan]="2">
-            <img src="../../../assets/35-big.jpg" alt="photo2">
+            <img src="../../../assets/f2.png" alt="photo2">
         </mat-grid-tile>
         <mat-grid-tile [colspan]="3">
             <p>
@@ -33,7 +33,7 @@
             </p>
         </mat-grid-tile>
     </mat-grid-list>
-    <h2>Обслуживание компанией "Хозяин"</h2>
+    <h2 class="compService">Обслуживание компанией "Хозяин"</h2>
     <mat-grid-list cols="2" rowHeight="2:1">
         <mat-grid-tile>
             <mat-card class="before">
@@ -78,6 +78,21 @@
             <div>13:00 - 14:00</div>
         </mat-card-content>
         <mat-card-subtitle>Выходные: Суббота, Воскресенье</mat-card-subtitle>
+        <mat-card-title> <h2>Время приема граждан</h2></mat-card-title>
+        <mat-card-content>
+            <mat-grid-list cols="2" rowHeight="80px" class="citizenHours">
+                <mat-grid-tile>
+                    <div>Понедельник <br> <br> <br>
+                    Четверг</div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div>10:00 - 13:00 <br>
+                    15:00 - 18:00 <br> <br>
+                        15:00 - 18:00
+                    </div>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </mat-card-content>
         <mat-card-content>
             Мы круглосуточно принимаем сообщения: <br> Viber - 096-271-62-12
             Email - uk.xoz17@ukr.net

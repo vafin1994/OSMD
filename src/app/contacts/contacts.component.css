@@ -1,18 +1,26 @@
-mat-grid-list{
-}
-div{
-  padding-top: 20px;
-}
-.contacts{
 
+div {
+    padding-top: 12px;
 }
-.workingHours{
 
+mat-card {
+    width: 400px;
+    background-color: rgba(188, 188, 188, 0.1);
+    transition: all 0.3s ease-out;
 }
-.map{
 
+.contacts:hover {
+    background-color: rgba(188, 188, 188, 0.2);
+    margin-top: -11px;
 }
-.wrap{
-  margin: auto;
-  max-width: 1024px;
+
+.wrap {
+    margin: auto;
+    max-width: 1024px;
+    min-height: calc(100vh - 182px);
+}
+
+
+.citizenHours {
+    margin-top: -50px;
 }

@@ -1,14 +1,16 @@
 .wrap {
-    height: 90px;
-    background-color: #aed581;
-    color: dimgrey;
+    margin-top: 10px;
+    height: 100px;
+    background-color: #98b9ab;
+    margin-bottom: 0px;
 }
 
 .grid {
+    color: black;
     margin: auto;
     width: 1024px;
 }
 
-.grid:hover {
-  color: black;
+.copywrite{
+  font-size: 13px;
 }

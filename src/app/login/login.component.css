@@ -1,12 +1,13 @@
 
 mat-card{
-  background-color: lightblue;
+  background-color: white;
   width: 400px;
+  margin-top: 20px;
 }
 mat-card-title{
   font-weight: bold;
 }
 
 .signupForm{
-  height: 500px;
+  min-height: calc(100vh - 170px);
 }

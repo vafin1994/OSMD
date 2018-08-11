@@ -1,62 +1,74 @@
 .wrap {
-    width: 1024px;
-    margin: auto;
-    text-align: justify;
+  width: 1024px;
+  margin: auto;
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h2 {
-    color: dimgrey;
-    text-align: center;
+  color: dimgrey;
+  text-align: center;
 }
 
 mat-card {
 
-    height: 210px;
-    padding: 5px;
+  height: 210px;
+  padding: 5px;
 }
 
 mat-card-title {
-    text-align: center;
+  text-align: center;
 }
 
 mat-card-content {
 
-    line-height: 20px;
-    font-weight: bold;
-    font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .before {
-    transition: all 0.3s ease;
-    margin-right: 10px;
-    background-color: rgba(255, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  margin-right: 10px;
+  background-color: rgba(255, 0, 0, 0.2);
 }
 
 .before:hover {
-    margin-top: -20px;
-    color: #000;
+  margin-top: -20px;
+  color: #000;
 }
 
 .after {
-    background-color: rgba(0, 255, 0, 0.2);
-    transition: all 0.3s ease;
+  background-color: rgba(0, 255, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
 .after:hover {
-    margin-top: -20px;
-    color: #000;
+  margin-top: -20px;
+  color: #000;
 }
 
 .workingHours {
-    height: 250px;
-    padding-bottom: 50px;
-    background-color: rgba(101, 155, 115, 0.1);
-    text-align: center;
-    transition: all 0.3s ease-out;
+  height: 450px;
+  padding-bottom: 50px;
+  background-color: rgba(101, 155, 115, 0.1);
+  text-align: center;
+  transition: all 0.3s ease-out;
 }
 
 .workingHours:hover {
-    margin-top: 10px;
-    background-color: rgba(101, 155, 115, 0.2);
+  background-color: rgba(101, 155, 115, 0.2);
 
+}
+
+.citizenHours {
+  width: 300px;
+  margin: auto;
+  font-size: 16px;
+}
+.compTitle{
+  margin-top: 0px;
+}
+.compService{
+  margin-bottom: 0px;
 }
