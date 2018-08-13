@@ -4,10 +4,10 @@
 }
 
 .img {
-    display: inline-block;
     margin: auto;
     background-repeat: no-repeat;
-    background-position-y: 0px;
+    background-position-y: -5px;
+    background-position-x: -3px;
     height: 115px;
     background-image: url("../../assets/newspaper.png");
     border: 1px solid transparent;
@@ -25,9 +25,10 @@ mat-card{
     transition: all 0.3s ease-out;
 }
 mat-card img{
-    margin: auto;
-    max-height: 300px;
+    padding-left: 50px;
+    align-self: center;
     max-width: 300px;
+    max-height: 300px;
 }
 a{
     text-decoration: none;

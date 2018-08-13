@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {AboutCompanyComponent} from './about-company/about-company.component';
+import {AboutCompanyComponent} from './about-company/header/about-company.component';
 import {OurServicesComponent} from './our-services/our-services.component';
 import {NewsComponent} from './news/news.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
@@ -14,6 +14,7 @@ import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
 
 const routes: Routes = [
     {path: 'aboutCompany', component: AboutCompanyComponent},
+    {path: '', component: AboutCompanyComponent},
     {path: 'osmdCreation', component: OsmdCreationComponent},
     {path: 'ourServices', component: OurServicesComponent},
     {path: 'news', component: NewsComponent},

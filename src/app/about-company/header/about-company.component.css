@@ -1,5 +1,5 @@
 .img {
-  background-image: url(../../assets/header.png);
+  background-image: url(../../../assets/header.png);
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
@@ -10,6 +10,7 @@
   margin: auto;
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
+  margin-bottom: 15px;
 }
 
 .content {
@@ -33,6 +34,7 @@ a {
   color: black;
   text-shadow: white 1px 1px 0, white -1px -1px 0,
   white -1px 1px 0, white 1px -1px 0;
+  text-decoration: none;
 }
 
 .about {
