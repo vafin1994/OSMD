@@ -16,7 +16,7 @@ import {MenuComponent} from './menu/menu.component';
 import {HouseSelectorComponent} from './house-selector/house-selector.component';
 import {FormsModule} from '@angular/forms';
 import {AppRoutingModule} from './/app-routing.module';
-import {AboutCompanyComponent} from './about-company/about-company.component';
+import {AboutCompanyComponent} from './about-company/header/about-company.component';
 import {NewsComponent} from './news/news.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
 import {DocumentsComponent} from './documents/documents.component';

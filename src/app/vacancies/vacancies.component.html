@@ -1,0 +1,27 @@
+<body>
+  <div class="wrap1">
+  <div class="img" fxFlex>
+    <h2>
+      В нашу команду требуются
+    </h2>
+  </div>
+  </div>
+  <div class="wrap">
+  <mat-grid-list cols="2" rowHeight="220px" gutterSize="-20px">
+    <mat-grid-tile *ngFor="let v of vacanciesList">
+      <a routerLink="/article">
+        <mat-card>
+          <mat-card-title>
+            {{v.title}}
+            <mat-divider></mat-divider>
+          </mat-card-title>
+            <mat-card-content>
+              {{v.description}}
+          </mat-card-content>
+        </mat-card>
+      </a>
+    </mat-grid-tile>
+  </mat-grid-list>
+  </div>
+
+</body>

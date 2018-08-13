@@ -1,0 +1,47 @@
+.img {
+  background-image: url(../../../assets/header.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: black;
+  text-shadow: white 1px 1px 0, white -1px -1px 0,
+  white -1px 1px 0, white 1px -1px 0;
+  width: 100%;
+  margin: auto;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 10px;
+}
+
+.content {
+  width: 1024px;
+  margin: auto;
+}
+
+.hoz {
+  height: 100%;
+  width: 100%;
+}
+
+mat-grid-tile {
+  text-align: center;
+}
+
+a {
+  line-height: 22px;
+  padding-top: 10px;
+  width: 100%;
+  color: black;
+  text-shadow: white 1px 1px 0, white -1px -1px 0,
+  white -1px 1px 0, white 1px -1px 0;
+  text-decoration: none;
+}
+
+.about {
+  border: 1px solid black;
+  margin-top: 0px;
+}
+
+.text {
+  background-color: gainsboro;
+}

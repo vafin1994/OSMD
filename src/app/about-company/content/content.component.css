@@ -8,8 +8,11 @@
 h2 {
   color: dimgrey;
   text-align: center;
+  margin-bottom: 5px;
 }
-
+p{
+  margin-top: -15px;
+}
 mat-card {
 
   height: 210px;
@@ -49,16 +52,22 @@ mat-card-content {
 }
 
 .workingHours {
-  height: 450px;
+  height: 390px;
   padding-bottom: 50px;
   background-color: rgba(101, 155, 115, 0.1);
   text-align: center;
   transition: all 0.3s ease-out;
 }
+.workingHours mat-card-content{
+  margin-top: -20px;
+}
+.messagesInfo{
+  font-weight: bold;
+  margin-top: 20px;
+}
 
 .workingHours:hover {
   background-color: rgba(101, 155, 115, 0.2);
-
 }
 
 .citizenHours {

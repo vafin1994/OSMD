@@ -1,39 +1,46 @@
 .wrap {
-    margin: auto;
-    max-width: 1024px;
+  margin: auto;
+  max-width: 1024px;
 }
 
 .img {
-    display: inline-block;
-    margin: auto;
-    background-repeat: no-repeat;
-    background-position-y: 0px;
-    height: 115px;
-    background-image: url("../../assets/newspaper.png");
-    border: 1px solid transparent;
+  display: inline-block;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position-y: -2px;
+  background-position-x: -1px;
+  height: 115px;
+  background-image: url("../../assets/newspaper.png");
+  border: 1px solid transparent;
 }
 
 h2 {
-    height: 115px;
-    font-size: 36px;
-    text-align: center;
-    border: 1px solid transparent;
-}
-mat-card{
-    height: 400px;
-    max-width: 400px;
-    transition: all 0.3s ease-out;
-}
-mat-card img{
-    margin: auto;
-    max-height: 300px;
-    max-width: 300px;
-}
-a{
-    text-decoration: none;
-}
-mat-card:hover{
-    background-color: rgba(55, 55, 65, 0.1);
-    margin-top: -20px;
+  height: 115px;
+  font-size: 36px;
+  text-align: center;
+  border: 1px solid transparent;
 }
 
+mat-card {
+  height: 400px;
+  max-width: 400px;
+  transition: all 0.3s ease-out;
+}
+
+mat-card img {
+  margin: auto;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+a {
+  text-decoration: none;
+}
+
+mat-card:hover {
+  background-color: rgba(55, 55, 65, 0.1);
+  margin-top: -20px;
+}
+body{
+  min-height: calc(100vh - 182px);
+}

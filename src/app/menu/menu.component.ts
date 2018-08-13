@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Menu} from './menu';
 
 @Component({
@@ -11,7 +11,7 @@ export class MenuComponent implements OnInit {
     {link: 'aboutCompany', name: 'О компании'},
     {link: 'osmdCreation', name: 'Создание ОСМД'},
     {link: 'ourServices', name: 'Услуги'},
-    {link: 'news', name: 'Новости'},
+    {link: 'news', name: 'Статьи и объявления'},
     {link: 'vacancies', name: 'Вакансии'},
     {link: 'contacts', name: 'Контакты'},
     {link: 'gallery', name: 'Галерея'},
