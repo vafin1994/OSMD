@@ -10,11 +10,7 @@
   margin: auto;
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
-<<<<<<< HEAD:src/app/about-company/header/about-company.component.css
-  margin-bottom: 10px;
-=======
   margin-bottom: 15px;
->>>>>>> aa9377f1a0cb0b8b352202b6f4dd7591a7edf128:src/app/about-company/header/about-company.component.css
 }
 
 .content {

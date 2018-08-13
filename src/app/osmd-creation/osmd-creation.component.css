@@ -1,14 +1,20 @@
-.wrap{
-    width: 1024px;
-    margin: auto;
-    font-family: 'Open Sans', sans-serif;
+.wrap {
+  width: 1000px;
+  margin: auto;
+  font-family: 'Open Sans', sans-serif;
+
 }
+
 h3 {
-    text-align: center;
+  text-align: center;
 }
-ol{
-    text-align: justify;
+
+ol {
+  text-align: justify;
+
 }
-li{
-    margin-top: 10px;
+
+li {
+  margin-right: 10px;
+  margin-top: 10px;
 }

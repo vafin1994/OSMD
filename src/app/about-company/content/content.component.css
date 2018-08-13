@@ -24,17 +24,12 @@ p{
 }
 
 h2 {
-<<<<<<< HEAD
   color: dimgrey;
   text-align: center;
   margin-bottom: 5px;
 }
 p{
   margin-top: -15px;
-=======
-    color: dimgrey;
-    text-align: center;
->>>>>>> aa9377f1a0cb0b8b352202b6f4dd7591a7edf128
 }
 mat-card {
     height: 210px;
@@ -74,19 +69,11 @@ mat-card-content {
 }
 
 .workingHours {
-<<<<<<< HEAD
   height: 390px;
   padding-bottom: 50px;
   background-color: rgba(101, 155, 115, 0.1);
   text-align: center;
   transition: all 0.3s ease-out;
-=======
-    height: 450px;
-    padding-bottom: 50px;
-    background-color: rgba(101, 155, 115, 0.1);
-    text-align: center;
-    transition: all 0.3s ease-out;
->>>>>>> aa9377f1a0cb0b8b352202b6f4dd7591a7edf128
 }
 .workingHours mat-card-content{
   margin-top: -20px;
@@ -97,12 +84,9 @@ mat-card-content {
 }
 
 .workingHours:hover {
-<<<<<<< HEAD
   background-color: rgba(101, 155, 115, 0.2);
-=======
-    background-color: rgba(101, 155, 115, 0.2);
 
->>>>>>> aa9377f1a0cb0b8b352202b6f4dd7591a7edf128
+
 }
 
 .citizenHours {
