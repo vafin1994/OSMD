@@ -47,7 +47,7 @@ mat-card-content {
 .before {
     transition: all 0.3s ease;
     margin-right: 10px;
-    background-color: rgba(255, 0, 0, 0.2);
+    background-color: rgb(181, 96, 96);;
 }
 
 .before:hover {

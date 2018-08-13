@@ -11,3 +11,7 @@ mat-card-title{
 .signupForm{
   min-height: calc(100vh - 170px);
 }
+button{
+  background-color: #1e8257;
+  color: white;
+}
