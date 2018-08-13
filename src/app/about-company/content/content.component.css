@@ -1,62 +1,92 @@
 .wrap {
-  width: 1024px;
-  margin: auto;
-  text-align: justify;
-  font-family: 'Open Sans', sans-serif;
+    width: 1024px;
+    margin: auto;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: 350px;
+    max-height: 350px;
+
+}
+p{
+    margin-top: -10px;
+}
+.photo1 {
+    float: right;
+    margin: 7px 0 0 7px;
+}
+
+.photo2 {
+    float: left;
+    margin: 0 7px 0 0;
 }
 
 h2 {
+<<<<<<< HEAD
   color: dimgrey;
   text-align: center;
   margin-bottom: 5px;
 }
 p{
   margin-top: -15px;
+=======
+    color: dimgrey;
+    text-align: center;
+>>>>>>> aa9377f1a0cb0b8b352202b6f4dd7591a7edf128
 }
 mat-card {
-
-  height: 210px;
-  padding: 5px;
+    height: 210px;
+    padding: 5px;
 }
 
 mat-card-title {
-  text-align: center;
+    text-align: center;
 }
 
 mat-card-content {
 
-  line-height: 20px;
-  font-weight: bold;
-  font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .before {
-  transition: all 0.3s ease;
-  margin-right: 10px;
-  background-color: rgba(255, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin-right: 10px;
+    background-color: rgb(181, 96, 96);;
 }
 
 .before:hover {
-  margin-top: -20px;
-  color: #000;
+    margin-top: -20px;
+    color: #000;
 }
 
 .after {
-  background-color: rgba(0, 255, 0, 0.2);
-  transition: all 0.3s ease;
+    background-color: rgba(0, 255, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
 .after:hover {
-  margin-top: -20px;
-  color: #000;
+    margin-top: -20px;
+    color: #000;
 }
 
 .workingHours {
+<<<<<<< HEAD
   height: 390px;
   padding-bottom: 50px;
   background-color: rgba(101, 155, 115, 0.1);
   text-align: center;
   transition: all 0.3s ease-out;
+=======
+    height: 450px;
+    padding-bottom: 50px;
+    background-color: rgba(101, 155, 115, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-out;
+>>>>>>> aa9377f1a0cb0b8b352202b6f4dd7591a7edf128
 }
 .workingHours mat-card-content{
   margin-top: -20px;
@@ -67,17 +97,24 @@ mat-card-content {
 }
 
 .workingHours:hover {
+<<<<<<< HEAD
   background-color: rgba(101, 155, 115, 0.2);
+=======
+    background-color: rgba(101, 155, 115, 0.2);
+
+>>>>>>> aa9377f1a0cb0b8b352202b6f4dd7591a7edf128
 }
 
 .citizenHours {
-  width: 300px;
-  margin: auto;
-  font-size: 16px;
+    width: 300px;
+    margin: auto;
+    font-size: 16px;
 }
-.compTitle{
-  margin-top: 0px;
+
+.compTitle {
+    margin-top: 0;
 }
-.compService{
-  margin-bottom: 0px;
+
+.compService {
+    margin-bottom: 0;
 }

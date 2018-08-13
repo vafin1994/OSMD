@@ -11,12 +11,11 @@
             <a routerLink="/article">
                 <mat-card>
                     <mat-card-title>
-                        {{n.title}}
+                        <div class="card-title">{{n.title}}</div>
                         <mat-divider></mat-divider>
                     </mat-card-title>
-
                     <img src="{{n.img}}"
-                         alt="Photo of a Shiba Inu">
+                         alt="{{n.title}} img">
                     <mat-card-content>
                         {{n.content}}
                     </mat-card-content>

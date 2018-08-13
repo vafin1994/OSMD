@@ -21,10 +21,16 @@ h2 {
   border: 1px solid transparent;
 }
 
-mat-card {
-  height: 400px;
-  max-width: 400px;
-  transition: all 0.3s ease-out;
+mat-card{
+    height: 400px;
+    max-width: 400px;
+    transition: all 0.3s ease-out;
+}
+mat-card img{
+    padding-left: 50px;
+    align-self: center;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 mat-card img {
@@ -35,6 +41,9 @@ mat-card img {
 
 a {
   text-decoration: none;
+}
+.card-title{
+    text-align: center;
 }
 
 mat-card:hover {
