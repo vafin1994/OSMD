@@ -35,39 +35,31 @@ mat-card {
     height: 210px;
     padding: 5px;
 }
-
 mat-card-title {
     text-align: center;
 }
-
 mat-card-content {
-
     line-height: 20px;
     font-weight: bold;
     font-size: 16px;
 }
-
 .before {
     transition: all 0.3s ease;
     margin-right: 10px;
     background-color: rgb(181, 96, 96);;
 }
-
 .before:hover {
     margin-top: -20px;
     color: #000;
 }
-
 .after {
     background-color: rgba(0, 255, 0, 0.2);
     transition: all 0.3s ease;
 }
-
 .after:hover {
     margin-top: -20px;
     color: #000;
 }
-
 .workingHours {
   height: 390px;
   padding-bottom: 50px;
@@ -82,23 +74,20 @@ mat-card-content {
   font-weight: bold;
   margin-top: 20px;
 }
-
 .workingHours:hover {
   background-color: rgba(101, 155, 115, 0.2);
-
-
 }
-
 .citizenHours {
     width: 300px;
     margin: auto;
     font-size: 16px;
 }
-
 .compTitle {
     margin-top: 0;
 }
-
 .compService {
     margin-bottom: 0;
+}
+.firstParagraph{
+    margin-top: 10px;
 }

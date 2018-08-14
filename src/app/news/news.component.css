@@ -1,55 +1,83 @@
 .wrap {
-  margin: auto;
-  max-width: 1024px;
+    margin: auto;
+    max-width: 1024px;
 }
 
 .img {
-  display: inline-block;
-  margin: auto;
-  background-repeat: no-repeat;
-  background-position-y: -2px;
-  background-position-x: -1px;
-  height: 115px;
-  background-image: url("../../assets/newspaper.png");
-  border: 1px solid transparent;
+    display: inline-block;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position-y: -2px;
+    background-position-x: -1px;
+    height: 115px;
+    background-image: url("../../assets/newspaper.png");
+    border: 1px solid transparent;
+    margin-bottom: 15px;
+}
+
+.flex {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardImg{
+    width: 100%;
+    text-align: center;
 }
 
 h2 {
-  height: 115px;
-  font-size: 36px;
-  text-align: center;
-  border: 1px solid transparent;
+    height: 115px;
+    font-size: 36px;
+    text-align: center;
+    border: 1px solid transparent;
 }
 
-mat-card{
+mat-card {
     height: 400px;
     max-width: 400px;
     transition: all 0.3s ease-out;
-}
-mat-card img{
-    padding-left: 50px;
-    align-self: center;
-    max-width: 300px;
-    max-height: 300px;
+    margin-bottom: 10px;
+
 }
 
 mat-card img {
-  margin: auto;
-  max-height: 300px;
-  max-width: 300px;
+    margin: auto;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
-.card-title{
+
+.card-title {
     text-align: center;
 }
 
 mat-card:hover {
-  background-color: rgba(55, 55, 65, 0.1);
-  margin-top: -20px;
+    background-color: rgba(55, 55, 65, 0.1);
+    margin-top: -10px;
 }
-body{
-  min-height: calc(100vh - 182px);
+
+body {
+    min-height: calc(100vh - 182px);
+}
+
+@media (max-width: 600px) {
+    .img{
+        background-position-x: -850px;
+
+    }
+    mat-card {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        margin-bottom: 10px;
+        height: 420px;
+    }
+    mat-card img{
+        border: 1px solid black;
+        padding: 0;
+        margin: auto;
+    }
 }

@@ -4,12 +4,12 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
-  MatButtonModule, MatCardModule, MatDividerModule, MatExpansionModule, MatGridListModule,
-  MatIconModule, MatInputModule,
-  MatMenuModule,
-  MatSelectModule,
-  MatTabsModule,
-  MatToolbarModule
+    MatButtonModule, MatCardModule, MatDividerModule, MatExpansionModule, MatGridListModule,
+    MatIconModule, MatInputModule,
+    MatMenuModule,
+    MatSelectModule, MatSidenavModule,
+    MatTabsModule,
+    MatToolbarModule
 } from '@angular/material';
 import {HeaderComponent} from './header/header.component';
 import {MenuComponent} from './menu/menu.component';
@@ -30,6 +30,7 @@ import {FooterComponent} from './footer/footer.component';
 import {ContentComponent} from './about-company/content/content.component';
 import { ArticleComponent } from './news/article/article.component';
 import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
+import { MessageComponent } from './contacts/message/message/message.component';
 
 
 @NgModule({
@@ -51,6 +52,7 @@ import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
         ContentComponent,
         ArticleComponent,
         VacancyComponent,
+        MessageComponent,
     ],
     imports: [
         BrowserModule,
@@ -69,6 +71,7 @@ import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
         MatDividerModule,
         FlexLayoutModule,
         MatExpansionModule,
+        MatSidenavModule
     ],
     providers: [],
     bootstrap: [AppComponent]

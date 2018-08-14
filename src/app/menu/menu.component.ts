@@ -17,9 +17,6 @@ export class MenuComponent implements OnInit {
     {link: 'gallery', name: 'Галерея'},
     {link: 'login', name: 'Личный кабинет'},
   ];
-
-
-
   active = false;
   constructor() { }
 
@@ -28,4 +25,5 @@ export class MenuComponent implements OnInit {
   isActive() {
     this.active = true;
   }
+
 }

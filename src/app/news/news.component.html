@@ -1,26 +1,28 @@
 <div class="wrap1">
     <div class="img" fxFlex>
         <h2>
-          Статьи и объявления
+            Статьи и объявления
         </h2>
     </div>
 </div>
 <div class="wrap">
-    <mat-grid-list cols="2" gutterSize="-20px" >
-        <mat-grid-tile *ngFor="let n of newsList">
+    <div class="flex" cols="2" gutterSize="-20px" >
+        <div *ngFor="let n of newsList">
             <a routerLink="/article">
                 <mat-card>
                     <mat-card-title>
                         <div class="card-title">{{n.title}}</div>
                         <mat-divider></mat-divider>
                     </mat-card-title>
-                    <img src="{{n.img}}"
-                         alt="{{n.title}} img">
+                    <div class="cardImg">
+                        <img src="{{n.img}}"
+                             alt="{{n.title}} img">
+                    </div>
                     <mat-card-content>
                         {{n.content}}
                     </mat-card-content>
                 </mat-card>
             </a>
-        </mat-grid-tile>
-    </mat-grid-list>
+        </div>
+    </div>
 </div>

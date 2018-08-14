@@ -1,6 +1,6 @@
-<div class="wrap">
-    <div class="menu">
-        <mat-grid-list cols="10" rowHeight="60px" fxHide.xs="true">
+<div class="wrap" fxShow.lt-md="false" fxFlex>
+    <div class="menu" >
+        <mat-grid-list cols="10" rowHeight="60px" >
             <mat-grid-tile class="logo" fxFlex>
                 <!--<a routerLink="aboutCompany" class="imgLogo" fxLayoutAlign="end center">-->
                     <!--<img src="../../assets/favicon.ico" alt="Logo">-->
@@ -19,6 +19,26 @@
     </div>
 </div>
 
+<div class="mobileMenu" fxShow.gt-sm="false">
+    <mat-drawer-container>
+        <mat-drawer #drawer mode="over" class="sideMenu">
+            <div *ngFor="let m of menuList" (click)="isActive()">
+                <a routerLink="{{m.link}}" fxLayoutAlign="center center">
+                    <div class="menuItem">
+                        {{m.name}}
+                    </div>
+                </a>
+            </div>
+        </mat-drawer>
+        <div >
+            <button mat-icon-button (click)="drawer.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+            Управляющая компания "Хозяин"
+        </div>
+
+    </mat-drawer-container>
+</div>
 
 
 

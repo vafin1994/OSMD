@@ -6,13 +6,14 @@ body{
     max-width: 1024px;
 }
 
-.img {
-    margin: auto;
-    background-repeat: no-repeat;
-    background-position-y: -158px;
-    height: 115px;
-    border: 1px solid transparent;
-    font-family: 'Open Sans', sans-serif;
+.flex{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.vacancies{
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
 h2 {
@@ -32,6 +33,19 @@ a{
 }
 mat-card:hover{
     background-color: rgba(55, 55, 65, 0.1);
-    margin-top: -20px;
+    margin-top: -10px;
+}
+@media (max-width: 600px){
+    .wrap1{
+        margin-bottom: 20px;
+    }
+    mat-card{
+        margin-top: 10px;
+        width: 90%;
+        height: 140px;
+    }
+    .vacancies{
+        margin-left: 0px;
+    }
 }
 
