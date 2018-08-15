@@ -14,7 +14,7 @@
 }
 
 .content {
-  width: 1024px;
+  max-width: 1024px;
   margin: auto;
 }
 
@@ -44,4 +44,10 @@ a {
 
 .text {
   background-color: gainsboro;
+}
+@media (max-width: 600px){
+  .img{
+    background-image: url(../../../assets/f2.png);
+
+  }
 }

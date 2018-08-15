@@ -40,7 +40,7 @@ mat-card:hover{
         margin-bottom: 20px;
     }
     mat-card{
-        margin-top: 10px;
+        margin: auto;
         width: 90%;
         height: 140px;
     }

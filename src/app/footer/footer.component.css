@@ -12,5 +12,14 @@
 }
 
 .copywrite{
+    background-color: #98b9ab;
   font-size: 13px;
+}
+@media (max-width: 600px){
+    .adress{
+        height: 100%;
+    }
+    p{
+        padding-left: 5px;
+    }
 }

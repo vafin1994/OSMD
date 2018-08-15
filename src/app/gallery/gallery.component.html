@@ -1,13 +1,13 @@
 <div class="wrap">
-  <mat-grid-list cols="2" rowHeight="420px">
-    <mat-grid-tile *ngFor="let img of imgList" g>
+  <div class="flex">
+    <div *ngFor="let img of imgList">
       <mat-card>
         <mat-card-title>
           {{img.title}}
         </mat-card-title>
         <img src="../../assets/f2.png" alt="photo">
       </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
+    </div>
+  </div>
 </div>
 

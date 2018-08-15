@@ -1,8 +1,14 @@
 .wrap {
-    width: 1024px;
+    max-width: 1024px;
     margin: auto;
     text-align: justify;
     font-family: 'Open Sans', sans-serif;
+}
+
+.flex {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 img {
@@ -32,8 +38,15 @@ p{
   margin-top: -15px;
 }
 mat-card {
-    height: 210px;
-    padding: 5px;
+    height: 230px;
+
+}
+.flex mat-card{
+    height: 260px;
+    width: 450px;
+}
+li{
+    margin-left: -30px;
 }
 mat-card-title {
     text-align: center;
@@ -44,24 +57,25 @@ mat-card-content {
     font-size: 16px;
 }
 .before {
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     margin-right: 10px;
     background-color: rgb(181, 96, 96);;
 }
 .before:hover {
-    margin-top: -20px;
+    margin-top: -10px;
     color: #000;
 }
 .after {
     background-color: rgba(0, 255, 0, 0.2);
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 .after:hover {
-    margin-top: -20px;
+    margin-top: -10px;
     color: #000;
 }
 .workingHours {
-  height: 390px;
+    margin-top: 10px;
+  height: 350px;
   padding-bottom: 50px;
   background-color: rgba(101, 155, 115, 0.1);
   text-align: center;
@@ -69,6 +83,10 @@ mat-card-content {
 }
 .workingHours mat-card-content{
   margin-top: -20px;
+}
+.workingHours mat-card-title h2{
+    margin-top: -10px;
+    margin-bottom: 30px;
 }
 .messagesInfo{
   font-weight: bold;
@@ -86,8 +104,33 @@ mat-card-content {
     margin-top: 0;
 }
 .compService {
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 .firstParagraph{
     margin-top: 10px;
+}
+@media (max-width: 600px) {
+    .wrap{
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .photo1, .photo2{
+        max-width: none;
+        margin: auto;
+        padding: 0;
+        float: none;
+        width: 100%;
+    }
+    .flex mat-card{
+        height: auto;
+    }
+    .before, .after {
+        width: 99%;
+        height: 350px;
+        margin: auto;
+    }
+    .workingHours{
+        height: 380px;
+    }
+
 }

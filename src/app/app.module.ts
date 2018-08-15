@@ -11,9 +11,7 @@ import {
     MatTabsModule,
     MatToolbarModule
 } from '@angular/material';
-import {HeaderComponent} from './header/header.component';
 import {MenuComponent} from './menu/menu.component';
-import {HouseSelectorComponent} from './house-selector/house-selector.component';
 import {FormsModule} from '@angular/forms';
 import {AppRoutingModule} from './/app-routing.module';
 import {AboutCompanyComponent} from './about-company/header/about-company.component';
@@ -36,9 +34,7 @@ import { MessageComponent } from './contacts/message/message/message.component';
 @NgModule({
     declarations: [
         AppComponent,
-        HeaderComponent,
         MenuComponent,
-        HouseSelectorComponent,
         AboutCompanyComponent,
         NewsComponent,
         VacanciesComponent,

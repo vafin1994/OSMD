@@ -30,6 +30,9 @@ a {
 .imgLogo:hover {
     background-color: #98b9ab;
 }
+.empty:hover{
+    background-color: #98b9ab;
+}
 
 mat-grid-tile:hover {
     background-color: lightgray;

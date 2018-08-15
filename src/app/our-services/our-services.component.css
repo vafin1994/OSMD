@@ -1,35 +1,62 @@
 .wrap {
-  min-height: calc(100vh - 190px);
-  padding-top: 20px;
-  width: 1024px;
-  margin: auto;
+    min-height: calc(100vh - 190px);
+    padding-top: 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .lawyers {
-  background-image: url("../../assets/services1.png");
-  background-position-x: 0px;
-  background-repeat: no-repeat;
+    background-image: url("../../assets/services1.png");
+    background-position-x: -2px;
+    background-repeat: no-repeat;
 }
+
+.accaunter {
+    background-image: url("../../assets/services1.png");
+    background-position-x: -4110px;
+    background-repeat: no-repeat;
+}
+
 .cleaning {
-  background-image: url("../../assets/services1.png");
-  background-position-x: -1028px;
-  background-repeat: no-repeat;
+    background-image: url("../../assets/services1.png");
+    background-position-x: -1028px;
+    background-repeat: no-repeat;
 }
-.repairing {
-  background-image: url("../../assets/services1.png");
-  background-position-x: -2048px;
-  background-repeat: no-repeat;
+
+.plumber {
+    background-image: url("../../assets/services1.png");
+    background-position-x: -2048px;
+    background-repeat: no-repeat;
 }
+
+.electrician {
+    background-image: url("../../assets/services1.png");
+    background-position-x: -6240px;
+    background-repeat: no-repeat;
+}
+
+.appartment {
+    background-image: url("../../assets/services1.png");
+    background-position-x: -5172px;
+
+    background-repeat: no-repeat;
+}
+
 .other {
-  background-image: url("../../assets/services1.png");
-  background-position-x: -3072px;
-  background-repeat: no-repeat;
+    background-image: url("../../assets/services1.png");
+    background-position-x: -3072px;
+    background-repeat: no-repeat;
 }
 
-mat-expansion-panel{
-  margin-top: 30px;
-}
-h1{
-  color: ghostwhite;
+mat-expansion-panel {
+    margin-top: 30px;
 }
 
+h1 {
+    color: ghostwhite;
+}
+@media (max-width: 600px) {
+    h1{
+        font-size: 18px;
+    }
+}

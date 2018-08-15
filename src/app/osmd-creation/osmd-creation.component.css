@@ -1,5 +1,5 @@
 .wrap {
-  width: 1000px;
+  max-width: 1000px;
   margin: auto;
   font-family: 'Open Sans', sans-serif;
 
@@ -15,6 +15,7 @@ ol {
 }
 
 li {
+  margin-left: 0px;
   margin-right: 10px;
   margin-top: 10px;
 }
