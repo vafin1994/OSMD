@@ -1,7 +1,7 @@
 .wrap {
     margin-top: 10px;
     height: 100px;
-    background-color: #98b9ab;
+    background-color: #409a74;
     margin-bottom: 0px;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .copywrite{
-    background-color: #98b9ab;
+    background-color: #409a74;
   font-size: 13px;
 }
 @media (max-width: 600px){
