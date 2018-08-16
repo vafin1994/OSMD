@@ -11,15 +11,27 @@
     max-width: 1024px;
 }
 
-.copywrite{
+.copywrite {
     background-color: #409a74;
-  font-size: 13px;
+    font-size: 13px;
 }
-@media (max-width: 600px){
-    .adress{
+mat-grid-tile{
+    margin-left: 40px;
+}
+
+@media (max-width: 600px) {
+    .adress {
         height: 100%;
     }
-    p{
+
+    p {
         padding-left: 5px;
     }
+    mat-grid-tile{
+        margin-left: 0px;
+    }
+    .content{
+        margin-left: 10px;
+    }
+
 }

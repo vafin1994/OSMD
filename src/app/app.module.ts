@@ -26,9 +26,12 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {OsmdCreationComponent} from './osmd-creation/osmd-creation.component';
 import {FooterComponent} from './footer/footer.component';
 import {ContentComponent} from './about-company/content/content.component';
-import { ArticleComponent } from './news/article/article.component';
+import {ArticleComponent} from './news/article/article.component';
 import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
-import { MessageComponent } from './contacts/message/message/message.component';
+import {MessageComponent} from './contacts/message/message/message.component';
+import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -67,10 +70,21 @@ import { MessageComponent } from './contacts/message/message/message.component';
         MatDividerModule,
         FlexLayoutModule,
         MatExpansionModule,
-        MatSidenavModule
+        MatSidenavModule,
+        HttpClientModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        })
     ],
     providers: [],
     bootstrap: [AppComponent]
 })
 export class AppModule {
+}
+export function HttpLoaderFactory(http: HttpClient) {
+    return new TranslateHttpLoader(http);
 }
