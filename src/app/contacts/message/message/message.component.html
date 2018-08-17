@@ -1,14 +1,14 @@
 <form>
-    <h2>Отправьте нам сообщение</h2>
+    <h2 translate>msg.sendMsg</h2>
     <div fxLayout="row" fxLayout.xs="column" class="data">
         <mat-form-field appearance="outline">
             <mat-label>Email</mat-label>
             <input matInput placeholder="example@mail.com">
             <mat-icon matSuffix>email</mat-icon>
-            <mat-hint>Это поле обязательно для ввода</mat-hint>
+            <mat-hint translate>msg.field</mat-hint>
         </mat-form-field>
         <mat-form-field appearance="outline">
-            <mat-label>Имя</mat-label>
+            <mat-label translate>msg.name</mat-label>
             <input matInput>
             <mat-icon matSuffix>person</mat-icon>
         </mat-form-field>
@@ -21,16 +21,16 @@
             <mat-label>Номер телефона</mat-label>
             <input matInput>
             <mat-icon matSuffix>phone</mat-icon>
-            <mat-hint>Введите если хотите что бы наш оператор вам перезвонил</mat-hint>
+            <mat-hint translate>msg.enterNumber</mat-hint>
         </mat-form-field>
 
     </div>
         <mat-form-field appearance="outline">
             <textarea matInput> </textarea>
-            <mat-label>Текст сообщения</mat-label>
+            <mat-label translate>msg.textOfMessage</mat-label>
         </mat-form-field>
     <div class="button" fxLayoutAlign="center">
-        <button mat-raised-button>Отправить</button>
+        <button mat-raised-button ><div translate>msg.send</div></button>
     </div>
 
 </form>

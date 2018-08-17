@@ -1,5 +1,5 @@
 <div class="wrap">
-    <h2 class="compTitle">О нас</h2>
+    <h2 class="compTitle" translate>aboutCompany.about</h2>
     <p class="firstParagraph">
         {{ 'aboutCompany.p1.1' | translate }}
         <img src="../../../assets/f2.png" alt="photo1" class="photo1">
@@ -48,20 +48,20 @@
 
 
     <mat-card class="workingHours">
-        <mat-card-title><h2>{{'aboutCompany.whTitle' | translate }}</h2></mat-card-title>
+        <mat-card-title><h2>{{'workTime' | translate }}</h2></mat-card-title>
         <mat-card-content>
-            <div>{{'aboutCompany.wD' | translate}}</div>
+            <div>{{'wD' | translate}}</div>
             <div>09:00 &ndash; 18:00</div>
-            <div> {{'aboutCompany.dinner' | translate}}</div>
+            <div> {{'dinner' | translate}}</div>
             <div>13:00 &ndash; 14:00</div>
         </mat-card-content>
-        <mat-card-subtitle>{{'aboutCompany.dayoff' | translate}}</mat-card-subtitle>
-        <mat-card-title><h2>{{'aboutCompany.cT' | translate}}</h2></mat-card-title>
+        <mat-card-subtitle>{{'daysoff' | translate}}</mat-card-subtitle>
+        <mat-card-title><h2>{{'cT' | translate}}</h2></mat-card-title>
         <mat-card-content>
             <mat-grid-list cols="2" rowHeight="80px" class="citizenHours">
                 <mat-grid-tile>
-                    <div>{{'aboutCompany.monday' | translate}} <br> <br> <br>
-                        {{'aboutCompany.thursday' | translate}}
+                    <div>{{'monday' | translate}}: <br> <br> <br>
+                        {{'thursday' | translate}}:
                     </div>
                 </mat-grid-tile>
                 <mat-grid-tile>
