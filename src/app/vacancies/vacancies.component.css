@@ -1,7 +1,7 @@
-body{
-    min-height: calc(100vh - 170px);
+.wrap{
+    min-height: calc(100vh - 200px);
 }
-.wrap {
+.content {
     margin: auto;
     max-width: 1024px;
 
@@ -22,7 +22,6 @@ h2 {
     font-size: 36px;
     text-align: center;
     border: 1px solid transparent;
-    font-family: 'Open Sans', sans-serif;
 }
 mat-card{
     text-align: justify;
@@ -37,6 +36,7 @@ mat-card:hover{
     background-color: rgba(55, 55, 65, 0.1);
     margin-top: -10px;
 }
+
 @media (max-width: 600px){
     .wrap1{
         margin-bottom: 20px;
