@@ -1,7 +1,7 @@
 <div class=img fxShow.lt-sm="false" fxHide.lt-md="true">
   <mat-grid-list cols="3" rowHeight="150px" fxLayoutAlign="center center" class="content">
     <mat-grid-tile fxLayoutAlign="center center">
-      <a routerLink="/contacts">
+      <a routerLink="/contacts" (click)="getURL()">
         <h4>
           <mat-icon>location_on</mat-icon>{{ 'address' | translate }} <br>
           098-271-62-12<br>096-271-62-12(Viber)<br> uk.xoz17@ukr.net

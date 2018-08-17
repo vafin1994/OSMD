@@ -1,3 +1,4 @@
+
 .wrap {
     background-color: #409a74;
     height: 60px;
@@ -7,6 +8,9 @@
 mat-grid-list {
     background-color: #409a74;
     text-align: center;
+}
+mat-grid-tile{
+    border-radius: 2px;
 }
 
 a {
@@ -34,19 +38,11 @@ a {
     background-color: #409a74;
 }
 
-mat-grid-tile:hover {
-    background-color: lightgray;
+.hv:hover {
+    background-color: #4fe0a3;
     height: 100%;
+    width: 100%;
 }
-
-.menuItem:active {
-    background-color: lightgray;
-}
-
-.active {
-    background-color: lightgray;
-}
-
 .logo {
     padding-right: 5%;
     color: #e3e816;
@@ -54,8 +50,13 @@ mat-grid-tile:hover {
 }
 
 mat-sidenav{
+
+}
+mat-sidenav-container{
+    background-color: #409a74;
 }
 .mobileMenu{
+
     width: 100%;
     height: 100%;
 
