@@ -1,25 +1,27 @@
 <body>
 <div class="wrap1">
-  <div class="img" fxFlex>
-    <h2 translate> vacancies.title </h2>
-  </div>
+    <div class="img" fxFlex>
+        <h2>
+            <div translate> vacancies.title</div>
+        </h2>
+    </div>
 </div>
 <div class="wrap">
-  <div class="flex">
-    <div *ngFor="let v of vacanciesList" class="vacancies">
-      <a routerLink="/article">
-        <mat-card>
-          <mat-card-title>
-            {{v.title}}
-            <mat-divider></mat-divider>
-          </mat-card-title>
-          <mat-card-content>
-            {{v.description}}
-          </mat-card-content>
-        </mat-card>
-      </a>
+    <div class="flex">
+        <div *ngFor="let v of vacanciesList" class="vacancies">
+            <a routerLink="/article">
+                <mat-card>
+                    <mat-card-title>
+                        {{v.title}}
+                        <mat-divider></mat-divider>
+                    </mat-card-title>
+                    <mat-card-content>
+                        {{v.description}}
+                    </mat-card-content>
+                </mat-card>
+            </a>
+        </div>
     </div>
-  </div>
 </div>
 
 </body>
