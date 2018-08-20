@@ -49,6 +49,13 @@ a {
     font-weight: bold;
 }
 .mobileMenu {
-    background-color: #1e8257;
+    background-color: #409a74;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+
+}
+.langMobile button{
+    font-weight: bold;
+    text-decoration: underline;
 }
 

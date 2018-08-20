@@ -25,10 +25,12 @@
 
 <div class="mobileMenu" fxShow.gt-sm="false">
     <div class="logo">
-        <button mat-button *ngIf="currentLang == 'ru'" (click)="useLanguage('ukr')">UKR</button>
-        <button mat-button *ngIf="currentLang == 'ukr'" (click)="useLanguage('ru')">RUS</button>
-        <span>{{ 'aboutCompany.title' | translate }}</span>
+        <span class="langMobile">
 
+            <button mat-button *ngIf="currentLang == 'ru'" (click)="useLanguage('ukr')">Украинский</button>
+            <button mat-button *ngIf="currentLang == 'ukr'" (click)="useLanguage('ru')">Руский</button>
+        </span>
+        <span>{{ 'aboutCompany.title' | translate }}</span>
     </div>
     <div>
         <button mat-icon-button   [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
@@ -36,7 +38,6 @@
     <mat-menu #menu="matMenu" [overlapTrigger]="false">
         <button mat-menu-item
                 *ngFor="let m of menuList"
-                [ngStyle]="{'background-color':m.link === address ? 'white' : '#4fe0a3' }"
                 (click)="getURL()">
             <a  routerLink="{{m.link}}" fxLayoutAlign="center center">
                 <div *ngIf="currentLang == 'ru'" class="menuItem">

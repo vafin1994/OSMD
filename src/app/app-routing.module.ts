@@ -13,7 +13,7 @@ import {ArticleComponent} from './news/article/article.component';
 import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
 
 const routes: Routes = [
-    {path: '', redirectTo: 'aboutCompany', pathMatch: 'full'},
+    {path: '', redirectTo: '/aboutCompany', pathMatch: 'full'},
     {path: 'aboutCompany', component: AboutCompanyComponent},
     {path: 'osmdCreation', component: OsmdCreationComponent},
     {path: 'ourServices', component: OurServicesComponent},
