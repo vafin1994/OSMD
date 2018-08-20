@@ -17,7 +17,7 @@
     margin-left: 10px;
 }
 
-h2 {
+h3 {
     height: 10px;
     font-size: 36px;
     text-align: center;
@@ -48,6 +48,9 @@ mat-card:hover{
     }
     .vacancies{
         margin-left: 0px;
+    }
+    h3{
+        font-size: 15px;
     }
 }
 

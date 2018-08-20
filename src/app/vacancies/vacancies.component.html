@@ -1,9 +1,9 @@
 <div class="wrap">
-    <h2> {{"vacancies.title"| translate}} </h2>
+    <h3> {{"vacancies.title"| translate}} </h3>
     <div class="content">
         <div class="flex">
             <div *ngFor="let v of vacanciesList" class="vacancies">
-                <a routerLink="/article">
+                <a routerLink="/vacancy">
                     <mat-card>
                         <mat-card-title>
                             {{v.title}}

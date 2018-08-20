@@ -13,28 +13,28 @@ import {ArticleComponent} from './news/article/article.component';
 import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
 
 const routes: Routes = [
-  {path: '', component: AboutCompanyComponent},
-  {path: 'aboutCompany', component: AboutCompanyComponent},
-  {path: 'osmdCreation', component: OsmdCreationComponent},
-  {path: 'ourServices', component: OurServicesComponent},
-  {path: 'news', component: NewsComponent},
-  {path: 'vacancies', component: VacanciesComponent},
-  {path: 'documents', component: DocumentsComponent},
-  {path: 'contacts', component: ContactsComponent},
-  {path: 'aboutCompany', component: AboutCompanyComponent},
-  {path: 'gallery', component: GalleryComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'article', component: ArticleComponent},
-  {path: 'vacancy', component: VacancyComponent},
+    {path: '', redirectTo: 'aboutCompany', pathMatch: 'full'},
+    {path: 'aboutCompany', component: AboutCompanyComponent},
+    {path: 'osmdCreation', component: OsmdCreationComponent},
+    {path: 'ourServices', component: OurServicesComponent},
+    {path: 'news', component: NewsComponent},
+    {path: 'vacancies', component: VacanciesComponent},
+    {path: 'documents', component: DocumentsComponent},
+    {path: 'contacts', component: ContactsComponent},
+    {path: 'aboutCompany', component: AboutCompanyComponent},
+    {path: 'gallery', component: GalleryComponent},
+    {path: 'login', component: LoginComponent},
+    {path: 'article', component: ArticleComponent},
+    {path: 'vacancy', component: VacancyComponent},
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes)
-  ],
-  exports: [
-    RouterModule,
-  ]
+    imports: [
+        RouterModule.forRoot(routes)
+    ],
+    exports: [
+        RouterModule,
+    ]
 })
 export class AppRoutingModule {
 }

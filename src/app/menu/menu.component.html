@@ -1,50 +1,56 @@
-<div class="wrap" fxShow.lt-md="false" fxFlex>
-    <div class="menu">
-        <mat-grid-list cols="10" rowHeight="60px">
-            <mat-grid-tile class="logo" fxFlex>
-                {{ 'menu.logo' | translate }}
-            </mat-grid-tile>
-            <mat-grid-tile
-                    *ngFor="let m of menuList"
-                    [ngStyle]="{'background-color':m.link === address ? 'white' : '#409a74' }"
-                    (click)="getURL()">
-                    <a class="hv" routerLink="{{m.link}}" fxLayoutAlign="center center">
-                        <div *ngIf="currentLang == 'ru'" class="menuItem">
-                            {{m.name}}
-                        </div>
-                        <div *ngIf="currentLang == 'ukr'" class="menuItem">
-                            {{m.ukrname}}
-                        </div>
-                    </a>
-            </mat-grid-tile>
-            <mat-grid-tile class="lang">
-                <button mat-button *ngIf="currentLang == 'ru'" (click)="useLanguage('ukr')">UKR</button>
-                <button mat-button *ngIf="currentLang == 'ukr'" (click)="useLanguage('ru')">RUS</button>
-            </mat-grid-tile>
-        </mat-grid-list>
-    </div>
+<div class="menu" fxShow.lt-md="false">
+    <mat-grid-list cols="10" rowHeight="60px">
+        <mat-grid-tile class="logo" fxFlex>
+            {{ 'menu.logo' | translate }}
+        </mat-grid-tile>
+        <mat-grid-tile
+                *ngFor="let m of menuList"
+                [ngStyle]="{'background-color':m.link === address ? 'white' : '#409a74' }"
+                (click)="getURL()">
+            <a class="hv" routerLink="{{m.link}}" fxLayoutAlign="center center">
+                <div *ngIf="currentLang == 'ru'" class="menuItem">
+                    {{m.name}}
+                </div>
+                <div *ngIf="currentLang == 'ukr'" class="menuItem">
+                    {{m.ukrname}}
+                </div>
+            </a>
+        </mat-grid-tile>
+        <mat-grid-tile class="lang">
+            <button mat-button *ngIf="currentLang == 'ru'" (click)="useLanguage('ukr')">UKR</button>
+            <button mat-button *ngIf="currentLang == 'ukr'" (click)="useLanguage('ru')">RUS</button>
+        </mat-grid-tile>
+    </mat-grid-list>
 </div>
 
 <div class="mobileMenu" fxShow.gt-sm="false">
-    <mat-sidenav-container>
-        <mat-sidenav #drawer mode="over" class="sideMenu">
-            <div *ngFor="let m of menuList" (click)="getURL()">
-                <a routerLink="{{m.link}}" fxLayoutAlign="center center">
-                    <div class="menuItem">
-                        {{m.name}}
-                    </div>
-                </a>
-            </div>
-        </mat-sidenav>
-        <mat-sidenav-content>
-            <button mat-icon-button (click)="drawer.toggle()">
-                <mat-icon>menu</mat-icon>
-            </button>
-            <span translate>aboutCompany.title</span>
-        </mat-sidenav-content>
+    <div class="logo">
+        <button mat-button *ngIf="currentLang == 'ru'" (click)="useLanguage('ukr')">UKR</button>
+        <button mat-button *ngIf="currentLang == 'ukr'" (click)="useLanguage('ru')">RUS</button>
+        <span>{{ 'aboutCompany.title' | translate }}</span>
 
-    </mat-sidenav-container>
+    </div>
+    <div>
+        <button mat-icon-button   [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+    </div>
+    <mat-menu #menu="matMenu" [overlapTrigger]="false">
+        <button mat-menu-item
+                *ngFor="let m of menuList"
+                [ngStyle]="{'background-color':m.link === address ? 'white' : '#4fe0a3' }"
+                (click)="getURL()">
+            <a  routerLink="{{m.link}}" fxLayoutAlign="center center">
+                <div *ngIf="currentLang == 'ru'" class="menuItem">
+                    {{m.name}}
+                </div>
+                <div *ngIf="currentLang == 'ukr'" class="menuItem">
+                    {{m.ukrname}}
+                </div>
+            </a>
+        </button>
+    </mat-menu>
 </div>
+
+
 
 
 
