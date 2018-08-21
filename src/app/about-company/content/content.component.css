@@ -136,6 +136,7 @@ mat-card-content {
     }
     .workingHours{
         height: 380px;
+        margin-top: 390px;
     }
 
 }
