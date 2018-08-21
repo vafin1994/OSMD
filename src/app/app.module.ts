@@ -32,6 +32,7 @@ import {MessageComponent} from './contacts/message/message/message.component';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {Angular2ImageGalleryModule} from 'angular2-image-gallery';
 
 
 @NgModule({
@@ -54,6 +55,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
         MessageComponent,
     ],
     imports: [
+        Angular2ImageGalleryModule,
         BrowserModule,
         BrowserAnimationsModule,
         MatToolbarModule,

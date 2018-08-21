@@ -59,4 +59,7 @@ h1 {
     h1{
         font-size: 18px;
     }
+    mat-expansion-panel-header:hover{
+        background: inherit;
+    }
 }

@@ -16,10 +16,13 @@ mat-grid-tile{
 a {
     font-size: 14px;
     font-weight: bold;
-    color: black;
+    color: white;
     text-decoration: none;
     height: 100%;
     width: 100%;
+}
+a:hover{
+    color: black;
 }
 
 .menu {
@@ -39,9 +42,9 @@ a {
 }
 
 .hv:hover {
-    background-color: #4fe0a3;
+    background-color: #2b7757;
     height: 100%;
-    width: 100%;
+    width: 101%;
 }
 .logo {
     padding-right: 5%;
@@ -52,9 +55,23 @@ a {
     background-color: #409a74;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+}
+.blackMenu{
+    color: black;
+}
+.lang a{
+    font-size: 14px;
+    cursor: pointer;
+    color: #e3e816;
+    margin: auto;
+    padding-top: 10px;
 
 }
+.lang a:hover{
+    text-decoration: none;
+}
 .langMobile button{
+    color: black;
     font-weight: bold;
     text-decoration: underline;
 }

@@ -41,6 +41,9 @@ mat-card {
     height: 230px;
 
 }
+.flex{
+    height: 320px;
+}
 .flex mat-card{
     height: 260px;
     width: 450px;
@@ -57,7 +60,8 @@ mat-card-content {
     font-size: 16px;
 }
 .before {
-    transition: all 0.2s ease;
+    margin-top: 10px;
+    transition: all 0.6s ease;
     margin-right: 10px;
     background-color: rgb(181, 96, 96);;
 }
@@ -66,8 +70,9 @@ mat-card-content {
     color: #000;
 }
 .after {
+    margin-top: 10px;
     background-color: rgba(0, 255, 0, 0.2);
-    transition: all 0.2s ease;
+    transition: all 0.6s ease;
 }
 .after:hover {
     margin-top: -10px;
@@ -93,7 +98,7 @@ mat-card-content {
   margin-top: 20px;
 }
 .workingHours:hover {
-  background-color: rgba(101, 155, 115, 0.2);
+  background-color: wheat;
 }
 .citizenHours {
     width: 300px;
