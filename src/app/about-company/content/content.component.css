@@ -14,129 +14,165 @@
 img {
     max-width: 350px;
     max-height: 350px;
-
+    padding: 8px;
 }
-p{
+
+p {
     margin-top: -10px;
 }
+
 .photo1 {
     float: right;
     margin: 7px 0 0 7px;
+    padding-right: 0;
 }
 
 .photo2 {
     float: left;
     margin: 0 7px 0 0;
+    padding-left: 0;
 }
 
 h2 {
-  color: dimgrey;
-  text-align: center;
-  margin-bottom: 5px;
+    color: dimgrey;
+    text-align: center;
+    margin-bottom: 5px;
 }
-p{
-  margin-top: -15px;
+
+p {
+    margin-top: -15px;
 }
+
 mat-card {
     height: 230px;
 
 }
-.flex{
+
+.flex {
     height: 320px;
 }
-.flex mat-card{
+
+.flex mat-card {
     height: 260px;
     width: 450px;
 }
-li{
+
+li {
     margin-left: -30px;
 }
+
 mat-card-title {
     text-align: center;
 }
+
 mat-card-content {
     line-height: 20px;
     font-weight: bold;
     font-size: 16px;
 }
+
 .before {
     margin-top: 10px;
     transition: all 0.6s ease;
     margin-right: 10px;
     background-color: rgb(181, 96, 96);;
 }
+
 .before:hover {
     margin-top: -10px;
     color: #000;
 }
+
 .after {
     margin-top: 10px;
     background-color: rgba(0, 255, 0, 0.2);
     transition: all 0.6s ease;
 }
+
 .after:hover {
     margin-top: -10px;
     color: #000;
 }
+
 .workingHours {
     margin-top: 10px;
-  height: 350px;
-  padding-bottom: 50px;
-  background-color: rgba(101, 155, 115, 0.1);
-  text-align: center;
-  transition: all 0.3s ease-out;
+    height: 350px;
+    padding-bottom: 50px;
+    background-color: rgba(101, 155, 115, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-out;
 }
-.workingHours mat-card-content{
-  margin-top: -20px;
+
+.workingHours mat-card-content {
+    margin-top: -20px;
 }
-.workingHours mat-card-title h2{
+
+.workingHours mat-card-title h2 {
     margin-top: -10px;
     margin-bottom: 30px;
 }
-.messagesInfo{
-  font-weight: bold;
-  margin-top: 20px;
+
+.messagesInfo {
+    font-weight: bold;
+    margin-top: 20px;
 }
+
 .workingHours:hover {
-  background-color: wheat;
+    background-color: wheat;
 }
+
 .citizenHours {
     width: 300px;
     margin: auto;
     font-size: 16px;
 }
+
 .compTitle {
     margin-top: 0;
 }
+
 .compService {
     margin-bottom: 10px;
 }
-.firstParagraph{
+
+.firstParagraph {
     margin-top: 10px;
 }
+
 @media (max-width: 600px) {
-    .wrap{
+    .wrap {
         padding-left: 4px;
         padding-right: 4px;
     }
-    .photo1, .photo2{
+
+    .photo1, .photo2 {
         max-width: none;
         margin: auto;
         padding: 0;
         float: none;
         width: 100%;
     }
-    .flex mat-card{
-        height: auto;
+
+    .flex {
+        height: 900px;
     }
+
+    .flex mat-card {
+        height: 400px;
+    }
+
     .before, .after {
         width: 99%;
         height: 350px;
         margin: auto;
     }
-    .workingHours{
+
+    .workingHours {
         height: 380px;
-        margin-top: 390px;
+    }
+
+    .workingHoursWrap {
+        height: 450px;
     }
 
 }
