@@ -51,14 +51,6 @@ a:hover{
     color: #e3e816;
     font-weight: bold;
 }
-.mobileMenu {
-    background-color: #409a74;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-}
-.blackMenu{
-    color: black;
-}
 .lang a{
     font-size: 14px;
     cursor: pointer;
@@ -70,9 +62,36 @@ a:hover{
 .lang a:hover{
     text-decoration: none;
 }
-.langMobile button{
-    color: black;
-    font-weight: bold;
-    text-decoration: underline;
+@media (max-width: 900px) {
+    .mobileMenu {
+        background: #409a74;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+    }
+    .mobileMenu a{
+        font-size: 20px;
+    }
+    .mobileLang{
+        text-align: center;
+        padding-top: 250px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .mobileLang button{
+        background-color: white;
+    }
+    mat-sidenav-container{
+        text-align: center;
+        position: inherit;
+    }
+    .mat-drawer{
+        width: 100%;
+        background: rgba(0,0,0,0.5);
+    }
+    .toggleMenu{
+        padding-top: 10px;
+    }
+    a:hover{
+        color: white;
+    }
 }
-

@@ -27,16 +27,11 @@
     </mat-grid-list>
 </div>
 
-<div class="mobileMenu" fxShow.gt-sm="false">
 
-    <span>
-        <button mat-icon-button   [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
-    </span>
-    <mat-menu #menu="matMenu" [overlapTrigger]="false">
-        <button mat-menu-item
-                *ngFor="let m of menuList"
-                (click)="getURL()">
-            <a  routerLink="{{m.link}}" fxLayoutAlign="center center" style="color:black">
+<mat-sidenav-container class="mobileMenu">
+    <mat-sidenav #sidenav [mode]="push" (click)="sidenav.toggle()">
+        <div *ngFor="let m of menuList" class="toggleMenu">
+            <a  routerLink="{{m.link}}" fxLayoutAlign="center center">
                 <div *ngIf="currentLang == 'ru'" class="menuItem">
                     {{m.name}}
                 </div>
@@ -44,14 +39,41 @@
                     {{m.ukrname}}
                 </div>
             </a>
-        </button>
-        <span class="langMobile">
-            <a mat-button *ngIf="currentLang == 'ru'" (click)="useLanguage('ukr')" style="color:gold">Українська версія</a>
-            <a mat-button *ngIf="currentLang == 'ukr'" (click)="useLanguage('ru')" style="color:gold">Русская версия</a>
-        </span>
-    </mat-menu>
-    <span class="logo">{{ 'aboutCompany.title' | translate }}</span>
-</div>
+
+        </div>
+        <div class="mobileLang">
+            <button mat-button *ngIf="currentLang == 'ru'" (click)="useLanguage('ukr')" >Українська версія</button>
+            <button mat-button *ngIf="currentLang == 'ukr'" (click)="useLanguage('ru')">Русская версия </button>
+        </div>
+    </mat-sidenav>
+    <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+    </button>
+</mat-sidenav-container>
+
+<!--<div class="mobileMenu" fxShow.gt-sm="false">-->
+    <!--<span>-->
+        <!--<button mat-icon-button   [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>-->
+    <!--</span>-->
+    <!--<mat-menu #menu="matMenu" [overlapTrigger]="false">-->
+        <!--<button mat-menu-item-->
+                <!--*ngFor="let m of menuList"-->
+                <!--(click)="getURL()">-->
+            <!--<a  routerLink="{{m.link}}" fxLayoutAlign="center center" style="color:black">-->
+                <!--<div *ngIf="currentLang == 'ru'" class="menuItem">-->
+                    <!--{{m.name}}-->
+                <!--</div>-->
+                <!--<div *ngIf="currentLang == 'ukr'" class="menuItem">-->
+                    <!--{{m.ukrname}}-->
+                <!--</div>-->
+            <!--</a>-->
+        <!--</button>-->
+        <!--<span class="langMobile">-->
+            <!--<a mat-button *ngIf="currentLang == 'ru'" (click)="useLanguage('ukr')" style="color:gold">Українська версія</a>-->
+            <!--<a mat-button *ngIf="currentLang == 'ukr'" (click)="useLanguage('ru')" style="color:gold">Русская версия</a>-->
+        <!--</span>-->
+    <!--</mat-menu>-->
+<!--</div>-->
 
 
 

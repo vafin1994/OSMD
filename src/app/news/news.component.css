@@ -65,7 +65,9 @@ body {
 
 @media (max-width: 600px) {
     .img{
-        background-position-x: -850px;
+        background: none;
+        height: 60px;
+        padding-top: 10px;
 
     }
     mat-card {
