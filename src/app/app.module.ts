@@ -33,6 +33,7 @@ import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {Angular2ImageGalleryModule} from 'angular2-image-gallery';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 
 @NgModule({
@@ -53,6 +54,7 @@ import {Angular2ImageGalleryModule} from 'angular2-image-gallery';
         ArticleComponent,
         VacancyComponent,
         MessageComponent,
+
     ],
     imports: [
         Angular2ImageGalleryModule,
@@ -82,7 +84,9 @@ import {Angular2ImageGalleryModule} from 'angular2-image-gallery';
             }
         })
     ],
-    providers: [],
+    providers: [
+        {provide: LocationStrategy, useClass: HashLocationStrategy}
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {

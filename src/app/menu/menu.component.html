@@ -1,16 +1,18 @@
 <div class="menu" fxShow.lt-md="false">
     <mat-grid-list cols="10" rowHeight="60px">
         <mat-grid-tile class="logo" fxFlex>
+
             {{ 'menu.logo' | translate }}
         </mat-grid-tile>
+
         <mat-grid-tile
                 *ngFor="let m of menuList"
-                [ngStyle]="{'background-color':m.link === address ? 'white' : '#409a74'}"
+                [ngStyle]="{'background-color':m.hashlink === address ? 'white' : '#409a74'}"
                 (click)="getURL()">
             <a
                     class="hv" routerLink="{{m.link}}"
                     fxLayoutAlign="center center"
-                    [ngStyle]="{'color': m.link === address? 'black': 'white'}"
+                    [ngStyle]="{'color': m.hashlink === address? 'black': 'white'}"
             >
                 <div *ngIf="currentLang == 'ru'" class="menuItem">
                     {{m.name}}
@@ -28,7 +30,7 @@
 </div>
 
 
-<mat-sidenav-container class="mobileMenu">
+<mat-sidenav-container class="mobileMenu" fxShow.gt-sm="false">
     <mat-sidenav #sidenav [mode]="push" (click)="sidenav.toggle()">
         <div *ngFor="let m of menuList" class="toggleMenu">
             <a  routerLink="{{m.link}}" fxLayoutAlign="center center">

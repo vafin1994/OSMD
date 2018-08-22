@@ -10,14 +10,14 @@ import {TranslateService} from '@ngx-translate/core';
 export class MenuComponent implements OnInit {
 
     menuList: Menu[] = [
-        {link: '/aboutCompany', name: 'О компании', ukrname: 'Про компанію'},
-        {link: '/osmdCreation', name: 'Создание ОСМД', ukrname: 'Створення ОСМД'},
-        {link: '/ourServices', name: 'Услуги', ukrname: 'Послуги'},
-        {link: '/news', name: 'Статьи и объяления', ukrname: 'Статті та оголошення'},
-        {link: '/vacancies', name: 'Вакансии', ukrname: 'Вакансії'},
-        {link: '/contacts', name: 'Контакты', ukrname: 'Контакти'},
-        {link: '/gallery', name: 'Галерея', ukrname: 'Галерея'},
-        {link: '/login', name: 'Личный кабинет', ukrname: 'Особистий кабінет'},
+        {hashlink: '#/aboutCompany', link: '/aboutCompany', name: 'О компании', ukrname: 'Про компанію'},
+        {hashlink: '#/osmdCreation', link: '/osmdCreation', name: 'Создание ОСМД', ukrname: 'Створення ОСМД'},
+        {hashlink: '#/ourServices', link: '/ourServices', name: 'Услуги', ukrname: 'Послуги'},
+        {hashlink: '#/news', link: '/news', name: 'Статьи и объяления', ukrname: 'Статті та оголошення'},
+        {hashlink: '#/vacancies', link: '/vacancies', name: 'Вакансии', ukrname: 'Вакансії'},
+        {hashlink: '#/contacts', link: '/contacts', name: 'Контакты', ukrname: 'Контакти'},
+        {hashlink: '#/gallery', link: '/gallery', name: 'Галерея', ukrname: 'Галерея'},
+        {hashlink: '#/login', link: '/login', name: 'Личный кабинет', ukrname: 'Особистий кабінет'},
     ];
     address = '';
     currentLang = 'ru';
@@ -35,6 +35,6 @@ export class MenuComponent implements OnInit {
     }
 
     getURL() {
-        this.address = window.location.pathname;
+        this.address = window.location.hash;
     }
 }
