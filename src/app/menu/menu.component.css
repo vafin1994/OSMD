@@ -47,9 +47,10 @@ a:hover{
     width: 101%;
 }
 .logo {
-    padding-right: 5%;
     color: #e3e816;
     font-weight: bold;
+    font-size: 20px;
+    white-space: nowrap;
 }
 .lang a{
     font-size: 14px;
@@ -85,10 +86,11 @@ a:hover{
         position: inherit;
     }
     .mat-drawer{
-        width: 100%;
+        width: 100vw;
         background: rgba(0,0,0,0.5);
     }
     .toggleMenu{
+        color: inherit;
         padding-top: 10px;
     }
     a:hover{

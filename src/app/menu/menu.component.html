@@ -1,13 +1,11 @@
 <div class="menu" fxShow.lt-md="false">
-    <mat-grid-list cols="10" rowHeight="60px">
-        <mat-grid-tile class="logo" fxFlex>
-
+    <mat-grid-list cols="11" rowHeight="60px">
+        <mat-grid-tile class="logo" fxFlex [colspan]="2">
             {{ 'menu.logo' | translate }}
         </mat-grid-tile>
-
+        <!--[ngStyle]="{'background-color':m.hashlink === address ? 'white' : '#429a3b'}"-->
         <mat-grid-tile
                 *ngFor="let m of menuList"
-                [ngStyle]="{'background-color':m.hashlink === address ? 'grey' : '#409a74'}"
                 (click)="getURL()">
             <a
                     class="hv" routerLink="{{m.link}}"
@@ -53,29 +51,6 @@
     </button>
 </mat-sidenav-container>
 
-<!--<div class="mobileMenu" fxShow.gt-sm="false">-->
-    <!--<span>-->
-        <!--<button mat-icon-button   [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>-->
-    <!--</span>-->
-    <!--<mat-menu #menu="matMenu" [overlapTrigger]="false">-->
-        <!--<button mat-menu-item-->
-                <!--*ngFor="let m of menuList"-->
-                <!--(click)="getURL()">-->
-            <!--<a  routerLink="{{m.link}}" fxLayoutAlign="center center" style="color:black">-->
-                <!--<div *ngIf="currentLang == 'ru'" class="menuItem">-->
-                    <!--{{m.name}}-->
-                <!--</div>-->
-                <!--<div *ngIf="currentLang == 'ukr'" class="menuItem">-->
-                    <!--{{m.ukrname}}-->
-                <!--</div>-->
-            <!--</a>-->
-        <!--</button>-->
-        <!--<span class="langMobile">-->
-            <!--<a mat-button *ngIf="currentLang == 'ru'" (click)="useLanguage('ukr')" style="color:gold">Українська версія</a>-->
-            <!--<a mat-button *ngIf="currentLang == 'ukr'" (click)="useLanguage('ru')" style="color:gold">Русская версия</a>-->
-        <!--</span>-->
-    <!--</mat-menu>-->
-<!--</div>-->
 
 
 

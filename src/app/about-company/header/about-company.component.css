@@ -1,6 +1,6 @@
 .img {
-  background-image: url(../../../assets/header.png);
-  background-position: center;
+  background-image: url(../../../assets/header2.png);
+  background-position-y: -5px;
   background-repeat: no-repeat;
   text-align: center;
   color: black;
@@ -16,6 +16,9 @@
 .content {
   max-width: 1024px;
   margin: auto;
+}
+.contentTitle{
+  font-size: 18px;
 }
 
 .hoz {

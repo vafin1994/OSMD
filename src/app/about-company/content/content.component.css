@@ -22,17 +22,10 @@ p {
 }
 
 .photo1 {
-    float: right;
-    margin: 7px 0 0 7px;
-    padding-right: 0;
-}
-
-.photo2 {
     float: left;
-    margin: 0 7px 0 0;
+    margin: 0 0 0 7px;
     padding-left: 0;
 }
-
 h2 {
     color: dimgrey;
     text-align: center;
