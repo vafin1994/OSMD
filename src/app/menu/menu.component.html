@@ -7,7 +7,7 @@
 
         <mat-grid-tile
                 *ngFor="let m of menuList"
-                [ngStyle]="{'background-color':m.hashlink === address ? 'white' : '#409a74'}"
+                [ngStyle]="{'background-color':m.hashlink === address ? 'grey' : '#409a74'}"
                 (click)="getURL()">
             <a
                     class="hv" routerLink="{{m.link}}"
