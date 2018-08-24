@@ -11,6 +11,7 @@ import {LoginComponent} from './login/login.component';
 import {OsmdCreationComponent} from './osmd-creation/osmd-creation.component';
 import {ArticleComponent} from './news/article/article.component';
 import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
+import {MainComponent} from './main/main.component';
 
 
 
@@ -26,7 +27,7 @@ const routes: Routes = [
     {path: 'login', component: LoginComponent},
     {path: 'article', component: ArticleComponent},
     {path: 'vacancy', component: VacancyComponent},
-    {path: '', component: AboutCompanyComponent},
+    {path: '', component: MainComponent},
 ];
 
 @NgModule({

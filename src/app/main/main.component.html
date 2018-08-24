@@ -1,0 +1,110 @@
+<div class="wrap">
+    <div class=img fxShow.lt-sm="false" fxHide.lt-md="true">
+        <mat-grid-list cols="3" rowHeight="150px" fxLayoutAlign="center center" class="content">
+            <mat-grid-tile fxLayoutAlign="center center" class="contentTitle" colspan="2">
+                <h2>{{ 'aboutCompany.title' | translate }} <br></h2>
+            </mat-grid-tile>
+            <mat-grid-tile fxLayoutAlign="center center">
+                <h4>
+                    <a routerLink="/contacts">
+                        <mat-icon>location_on</mat-icon>
+                        {{ 'address' | translate }} <br>
+                        096-271-62-12<br>096-271-62-12(Viber)<br> uk.xoz17@ukr.net
+                    </a>
+
+                </h4>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+    <div class=img fxShow.gt-sm="false">
+        <mat-grid-list cols="1" rowHeight="150px" fxLayoutAlign="center center" class="content">
+            <mat-grid-tile fxLayoutAlign="center center">
+                <h2>{{ 'aboutCompany.title' | translate }}<br></h2>
+            </mat-grid-tile>
+            <mat-grid-tile fxLayoutAlign="center center">
+                <a routerLink="/contacts">
+                    <h4>
+                        {{ 'address' | translate }}<br>
+                        098-271-62-12<br>096-271-62-12(Viber)<br> uk.xoz17@ukr.net
+                    </h4>
+                </a>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+</div>
+
+<div class="wrap2">
+    <div class="paragraph1">
+        <img src="../../assets/f2.png" alt="LOGO" fxShow.lt-sm="false" fxHide.lt-md="true">
+        <p>{{ 'aboutCompany.p1.1' | translate }}</p>
+        <img class="mobileLogo" src="../../assets/f2.png" alt="LOGO" fxShow.gt-sm="false" fxHide.lt-md="false">
+    </div>
+    <h2 align="center" class="compService">{{'aboutCompany.serviceTitle' | translate }}</h2>
+    <div class="flex">
+        <mat-card class="before">
+            <mat-card-title>
+                {{'aboutCompany.before' | translate }}
+            </mat-card-title>
+            <mat-card-content>
+                <ul>
+                    <li>{{'aboutCompany.b1' | translate }}</li>
+                    <li>{{'aboutCompany.b2' | translate }}</li>
+                    <li>{{'aboutCompany.b3' | translate }}</li>
+                    <li>{{'aboutCompany.b4' | translate }}</li>
+                    <li>{{'aboutCompany.b5' | translate }}</li>
+                    <li>{{'aboutCompany.b6' | translate }}</li>
+                </ul>
+            </mat-card-content>
+
+        </mat-card>
+
+        <mat-card class="after">
+            <mat-card-title>
+                {{'aboutCompany.after' | translate }}
+            </mat-card-title>
+            <mat-card-content>
+                <ul>
+                    <li>{{'aboutCompany.a1' | translate }}</li>
+                    <li>{{'aboutCompany.a2' | translate }}</li>
+                    <li>{{'aboutCompany.a3' | translate }}</li>
+                    <li>{{'aboutCompany.a4' | translate }}</li>
+                    <li>{{'aboutCompany.a5' | translate }}</li>
+                    <li>{{'aboutCompany.a6' | translate }}</li>
+                </ul>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="workingHoursWrap">
+        <mat-card class="workingHours">
+            <mat-card-title><h2>{{'workTime' | translate }}</h2></mat-card-title>
+            <mat-card-content>
+                <div>{{'wD' | translate}}</div>
+                <div>09:00 &ndash; 18:00</div>
+                <div> {{'dinner' | translate}}</div>
+                <div>13:00 &ndash; 14:00</div>
+            </mat-card-content>
+            <mat-card-subtitle>{{'daysoff' | translate}}</mat-card-subtitle>
+            <mat-card-title><h2>{{'cT' | translate}}</h2></mat-card-title>
+            <mat-card-content>
+                <mat-grid-list cols="2" rowHeight="80px" class="citizenHours">
+                    <mat-grid-tile>
+                        <div>{{'monday' | translate}}: <br> <br> <br>
+                            {{'thursday' | translate}}:
+                        </div>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <div>10:00 &ndash; 13:00 <br>
+                            15:00 &ndash; 18:00 <br> <br>
+                            15:00 &ndash; 18:00
+                        </div>
+                    </mat-grid-tile>
+                </mat-grid-list>
+            </mat-card-content>
+            <div class="messagesInfo">
+                {{'aboutCompany.msgs' | translate}} <br> Viber &mdash; 096-271-62-12 <br>
+                Email &mdash; uk.xoz17@ukr.net
+            </div>
+        </mat-card>
+    </div>
+</div>
+

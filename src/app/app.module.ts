@@ -34,6 +34,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {Angular2ImageGalleryModule} from 'angular2-image-gallery';
 import {HashLocationStrategy, LocationStrategy} from '@angular/common';
+import { MainComponent } from './main/main.component';
 
 
 @NgModule({
@@ -54,6 +55,7 @@ import {HashLocationStrategy, LocationStrategy} from '@angular/common';
         ArticleComponent,
         VacancyComponent,
         MessageComponent,
+        MainComponent,
 
     ],
     imports: [

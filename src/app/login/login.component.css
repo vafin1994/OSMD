@@ -1,6 +1,6 @@
 
 mat-card{
-  background-color: #98b9ab;
+  background-color: #b5d827ad;
   width: 400px;
   margin-top: 20px;
 }
@@ -12,6 +12,6 @@ mat-card-title{
   min-height: calc(100vh - 170px);
 }
 button{
-  background-color: #1e8257;
+  background-color: green;
   color: white;
 }

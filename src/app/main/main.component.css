@@ -1,0 +1,187 @@
+.wrap{
+    background-image: url(../../assets/header2.png);
+    color: green;
+    text-shadow: white 1px 1px 0, white -1px -1px 0,
+    white -1px 1px 0, white 1px -1px 0;
+    background-position-y: -5px;
+}
+.wrap a{
+    color: inherit;
+}
+
+.contentTitle{
+    font-size: 25px;
+}
+.content{
+    text-align: center;
+}
+.img{
+    max-width: 1024px;
+    margin: auto;
+}
+.wrap2{
+    margin: auto;
+    margin-top: 20px;
+    max-width: 1024px;
+}
+.flex {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+mat-card {
+    height: 230px;
+
+}
+
+.flex {
+    height: 320px;
+}
+
+.flex mat-card {
+    height: 260px;
+    width: 450px;
+}
+
+li {
+    margin-left: -30px;
+}
+
+mat-card-title {
+    text-align: center;
+}
+
+mat-card-content {
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.before {
+    margin-top: 10px;
+    transition: all 0.6s ease;
+    margin-right: 10px;
+    background-color: rgb(181, 96, 96);;
+}
+
+.before:hover {
+    margin-top: -10px;
+    color: #000;
+}
+
+.after {
+    margin-top: 10px;
+    background-color: rgba(0, 255, 0, 0.2);
+    transition: all 0.6s ease;
+}
+
+.after:hover {
+    margin-top: -10px;
+    color: #000;
+}
+
+.workingHours {
+    margin-top: 10px;
+    height: 350px;
+    padding-bottom: 50px;
+    background-color: rgba(101, 155, 115, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-out;
+}
+
+.workingHours mat-card-content {
+    margin-top: -20px;
+}
+
+.workingHours mat-card-title h2 {
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.messagesInfo {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.workingHours:hover {
+    background-color: wheat;
+}
+
+.citizenHours {
+    width: 300px;
+    margin: auto;
+    font-size: 16px;
+}
+
+.compTitle {
+    margin-top: 0;
+}
+
+.compService {
+    margin-bottom: 10px;
+}
+img{
+    float: left;
+    max-width: 500px;
+    max-height: 300px;
+    padding-right: 10px;
+}
+.paragraph1 p{
+    text-align: justify;
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+    max-width: 650px;
+}
+.paragraph1{
+    height: 300px;
+}
+
+
+@media (max-width: 600px) {
+    .wrap {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .flex {
+        height: 900px;
+    }
+
+    .flex mat-card {
+        height: 400px;
+    }
+
+    .before, .after {
+        width: 99%;
+        height: 350px;
+        margin: auto;
+    }
+
+    .workingHours {
+        height: 380px;
+    }
+
+    .workingHoursWrap {
+        height: 450px;
+    }
+    img{
+        float: none;
+        width: 100%;
+        max-height: 250px;
+        padding: 0;
+    }
+    .paragraph1{
+        width: 100vw;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+
+    }
+    a{
+        color: inherit;
+    }
+    .mobileLogo{
+        float: left;
+    }
+
+}

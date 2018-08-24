@@ -1,12 +1,10 @@
 
 .wrap {
-    background-color: #409a74;
-    height: 60px;
+    height: 30px;
     font-family: 'Open Sans', sans-serif;
 }
 
 mat-grid-list {
-    background-color: #409a74;
     text-align: center;
 }
 mat-grid-tile{
@@ -16,7 +14,6 @@ mat-grid-tile{
 a {
     font-size: 14px;
     font-weight: bold;
-    color: white;
     text-decoration: none;
     height: 100%;
     width: 100%;
@@ -31,25 +28,25 @@ a:hover{
 }
 
 .logo:hover {
-    background-color: #409a74;
+    background-color: #b5d827ad;
 }
 
 .imgLogo:hover {
-    background-color: #409a74;
+    background-color: #b5d827ad;
 }
 .lang:hover{
-    background-color: #409a74;
+    background-color: transparent;
 }
 
 .hv:hover {
-    background-color: #2b7757;
+    background-color: #b5d827ad;
     height: 100%;
     width: 101%;
 }
 .logo {
-    color: #e3e816;
+    color: black;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     white-space: nowrap;
 }
 .lang a{
@@ -65,7 +62,7 @@ a:hover{
 }
 @media (max-width: 900px) {
     .mobileMenu {
-        background: #409a74;
+        background: #b5d827ad;
         font-family: 'Open Sans', sans-serif;
         font-size: 14px;
     }
@@ -80,11 +77,21 @@ a:hover{
     }
     .mobileLang button{
         background-color: white;
+        float: none;
     }
     mat-sidenav-container{
-        text-align: center;
         position: inherit;
+        text-align: right;
     }
+    mat-sidenav-container button{
+        float: left;
+        margin-top: -8px;
+    }
+    mat-sidenav-container a{
+        color: white;
+        padding-right: 10px;
+    }
+
     .mat-drawer{
         width: 100vw;
         background: rgba(0,0,0,0.5);
@@ -95,5 +102,8 @@ a:hover{
     }
     a:hover{
         color: white;
+    }
+    mat-sidenav-container .menuLogo a{
+        color: black;
     }
 }

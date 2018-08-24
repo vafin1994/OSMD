@@ -1,16 +1,15 @@
 <div class="menu" fxShow.lt-md="false">
-    <mat-grid-list cols="11" rowHeight="60px">
-        <mat-grid-tile class="logo" fxFlex [colspan]="2">
-            {{ 'menu.logo' | translate }}
+    <mat-grid-list cols="9" rowHeight="60px">
+        <mat-grid-tile  fxFlex [colspan]="2" (click)="getURL()">
+            <a class="logo" routerLink="" fxLayoutAlign="center center">{{ 'menu.logo' | translate }}</a>
         </mat-grid-tile>
-        <!--[ngStyle]="{'background-color':m.hashlink === address ? 'white' : '#429a3b'}"-->
         <mat-grid-tile
                 *ngFor="let m of menuList"
                 (click)="getURL()">
             <a
                     class="hv" routerLink="{{m.link}}"
                     fxLayoutAlign="center center"
-                    [ngStyle]="{'color': m.hashlink === address? 'black': 'white'}"
+                    [ngStyle]="{'color': m.hashlink === address? 'black': 'green'}"
             >
                 <div *ngIf="currentLang == 'ru'" class="menuItem">
                     {{m.name}}
@@ -21,8 +20,8 @@
             </a>
         </mat-grid-tile>
         <mat-grid-tile class="lang">
-            <a *ngIf="currentLang == 'ru'" (click)="useLanguage('ukr')" >Українська версія</a>
-            <a *ngIf="currentLang == 'ukr'" (click)="useLanguage('ru')">Русская версия </a>
+            <button mat-button *ngIf="currentLang == 'ru'" (click)="useLanguage('ukr')" >UKR</button>
+            <button mat-button *ngIf="currentLang == 'ukr'" (click)="useLanguage('ru')">RUS</button>
         </mat-grid-tile>
     </mat-grid-list>
 </div>
@@ -42,13 +41,14 @@
 
         </div>
         <div class="mobileLang">
-            <button mat-button *ngIf="currentLang == 'ru'" (click)="useLanguage('ukr')" >Українська версія</button>
-            <button mat-button *ngIf="currentLang == 'ukr'" (click)="useLanguage('ru')">Русская версия </button>
+            <button mat-button *ngIf="currentLang == 'ru'" (click)="useLanguage('ukr')" >Українська мова</button>
+            <button mat-button *ngIf="currentLang == 'ukr'" (click)="useLanguage('ru')">Русский язык</button>
         </div>
     </mat-sidenav>
-    <button mat-icon-button (click)="sidenav.toggle()">
-        <mat-icon>menu</mat-icon>
-    </button>
+    <div class="menuLogo">
+        <button mat-icon-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
+        <a  routerLink="" >{{ 'menu.logo' | translate }}</a>
+    </div>
 </mat-sidenav-container>
 
 

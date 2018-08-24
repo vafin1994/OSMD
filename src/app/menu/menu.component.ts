@@ -14,9 +14,9 @@ export class MenuComponent implements OnInit {
         {hashlink: '#/osmdCreation', link: '/osmdCreation', name: 'Создание ОСМД', ukrname: 'Створення ОСМД'},
         {hashlink: '#/ourServices', link: '/ourServices', name: 'Услуги', ukrname: 'Послуги'},
         {hashlink: '#/news', link: '/news', name: 'Статьи и объяления', ukrname: 'Статті та оголошення'},
-        {hashlink: '#/vacancies', link: '/vacancies', name: 'Вакансии', ukrname: 'Вакансії'},
+        // {hashlink: '#/vacancies', link: '/vacancies', name: 'Вакансии', ukrname: 'Вакансії'},
         {hashlink: '#/contacts', link: '/contacts', name: 'Контакты', ukrname: 'Контакти'},
-        {hashlink: '#/gallery', link: '/gallery', name: 'Галерея', ukrname: 'Галерея'},
+        // {hashlink: '#/gallery', link: '/gallery', name: 'Галерея', ukrname: 'Галерея'},
         {hashlink: '#/login', link: '/login', name: 'Личный кабинет', ukrname: 'Особистий кабінет'},
     ];
     address = '';

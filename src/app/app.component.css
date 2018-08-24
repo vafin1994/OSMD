@@ -1,12 +1,12 @@
 
 .wrap {
-    background-color: #409a74;
+    background-color: #b5d827ad;
     height: 60px;
     font-family: 'Open Sans', sans-serif;
 }
 
 mat-grid-list {
-    background-color: #409a74;
+    background-color: #b5d827ad;
     text-align: center;
 }
 mat-grid-tile{
@@ -47,4 +47,11 @@ a {
     padding-right: 5%;
     color: #e3e816;
     font-weight: bold;
+}
+@media (max-width: 800px) {
+    .wrap {
+        background-color:inherit;
+        height: 30px;
+        font-family: 'Open Sans', sans-serif;
+    }
 }
