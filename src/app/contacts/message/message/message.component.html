@@ -1,36 +1,41 @@
-<form>
+<form  #mailForm="ngForm">
     <h2 translate>msg.sendMsg</h2>
     <div fxLayout="row" fxLayout.xs="column" class="data">
         <mat-form-field appearance="outline">
             <mat-label>Email</mat-label>
-            <input matInput placeholder="example@mail.com">
+            <input name="email" ngModel required email matInput placeholder="example@mail.com">
             <mat-icon matSuffix>email</mat-icon>
             <mat-hint translate>msg.field</mat-hint>
+            <mat-error>
+                Введите валидный Email
+            </mat-error>
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label translate>msg.name</mat-label>
-            <input matInput>
+            <input name="name" ngModel matInput>
             <mat-icon matSuffix>person</mat-icon>
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>Тема</mat-label>
-            <input matInput>
+            <input name="theme" ngModel matInput>
             <mat-icon matSuffix>label</mat-icon>
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>Номер телефона</mat-label>
-            <input matInput>
+            <input name="phone" ngModel pattern="^\+?(\ ?\(?\)?\ ?-?\d){5,20}\ ?" matInput>
             <mat-icon matSuffix>phone</mat-icon>
             <mat-hint translate>msg.enterNumber</mat-hint>
+            <mat-error>
+               Введите валидный номер телефона, или оставьте это поле пустым
+            </mat-error>
         </mat-form-field>
 
     </div>
         <mat-form-field appearance="outline">
-            <textarea matInput> </textarea>
+            <textarea name="message" ngModel matInput> </textarea>
             <mat-label translate>msg.textOfMessage</mat-label>
         </mat-form-field>
-    <div class="button" fxLayoutAlign="center">
-        <button mat-raised-button ><div translate>msg.send</div></button>
+    <div  class="button" fxLayoutAlign="center">
+        <button (click)="OnSubmit(mailForm)" [disabled]="mailForm.invalid" mat-raised-button ><div translate>msg.send</div></button>
     </div>
-
 </form>
