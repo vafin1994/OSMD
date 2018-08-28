@@ -11,9 +11,12 @@
     max-width: 1024px;
 }
 
-.copywrite {
-    background-color: transparent;
+.copyright {
+
     font-size: 13px;
+}
+.mobileCopyright {
+    background-color: #b5d827ad;
 }
 .telNumber{
     padding-left: 0;

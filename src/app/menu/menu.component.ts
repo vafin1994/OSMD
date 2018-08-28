@@ -11,7 +11,7 @@ export class MenuComponent implements OnInit {
 
     menuList: Menu[] = [
         {hashlink: '#/aboutCompany', link: '/aboutCompany', name: 'О компании', ukrname: 'Про компанію'},
-        {hashlink: '#/osmdCreation', link: '/osmdCreation', name: 'Создание ОСМД', ukrname: 'Створення ОСМД'},
+        {hashlink: '#/osmdCreation', link: '/osmdCreation', name: 'Создание  ОСМД', ukrname: 'Створення ОСМД'},
         {hashlink: '#/ourServices', link: '/ourServices', name: 'Услуги', ukrname: 'Послуги'},
         {hashlink: '#/news', link: '/news', name: 'Статьи и объяления', ukrname: 'Статті та оголошення'},
         // {hashlink: '#/vacancies', link: '/vacancies', name: 'Вакансии', ukrname: 'Вакансії'},

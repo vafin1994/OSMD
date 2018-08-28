@@ -117,6 +117,9 @@ mat-card-content {
     margin-top: 0;
 }
 
+.logo{
+    height: 250px;
+}
 .compService {
     margin-bottom: 10px;
 }
@@ -127,7 +130,7 @@ img{
     padding-right: 10px;
 }
 .paragraph1 p{
-    text-align: justify;
+    text-align: center;
     float: right;
     font-size: 30px;
     font-weight: bold;
@@ -174,14 +177,19 @@ img{
         width: 100vw;
         font-size: 18px;
         font-weight: bold;
-        text-align: center;
 
     }
     a{
         color: inherit;
     }
     .mobileLogo{
-        float: left;
+        max-width: 360px;
+        height: 450px;
+        float: right;
+    }
+    .paragraph1 img{
+        max-height: none;
+        height: 400px;
     }
 
 }

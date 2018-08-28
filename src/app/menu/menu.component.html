@@ -28,7 +28,7 @@
 
 
 <mat-sidenav-container class="mobileMenu" fxShow.gt-sm="false">
-    <mat-sidenav #sidenav [mode]="push" (click)="sidenav.toggle()">
+    <mat-sidenav #sidenav (click)="sidenav.toggle()">
         <div *ngFor="let m of menuList" class="toggleMenu">
             <a  routerLink="{{m.link}}" fxLayoutAlign="center center">
                 <div *ngIf="currentLang == 'ru'" class="menuItem">

@@ -36,4 +36,25 @@ mat-card:hover{
     background-color: rgba(55, 55, 65, 0.1);
     margin-top: -20px;
 }
-
+img{
+    margin: auto;
+    max-width: 400px;
+    max-height: 400px;
+    float: left;
+    padding-right: 20px;
+}
+@media (max-width: 600px) {
+    .img{
+        background-image: none;
+    }
+    img{
+        padding: 0;
+        float: none;
+        margin: auto;
+        text-align: center;
+        width: 95%;
+    }
+    p{
+        text-align: center;
+    }
+}

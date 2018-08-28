@@ -21,3 +21,13 @@ button{
     margin: auto;
     margin: 10px;
 }
+.succesfullEmail{
+    margin: auto;
+    text-align: center;
+    color: #4fe0a3;
+}
+.errorEmail{
+    margin: auto;
+    text-align: center;
+    color: red;
+}

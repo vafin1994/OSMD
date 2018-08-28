@@ -1,6 +1,7 @@
 .wrap {
     margin: auto;
     max-width: 1024px;
+    min-height: calc(87vh - 170px);
 }
 
 .img {
@@ -37,7 +38,6 @@ mat-card {
     max-width: 400px;
     transition: all 0.3s ease-out;
     margin-bottom: 10px;
-
 }
 
 mat-card img {
@@ -56,7 +56,6 @@ a {
 
 mat-card:hover {
     background-color: rgba(55, 55, 65, 0.1);
-    margin-top: -10px;
 }
 
 body {
@@ -75,7 +74,7 @@ body {
         margin: 0;
         width: 100%;
         margin-bottom: 10px;
-        height: 420px;
+        height: 450px;
     }
     mat-card img{
         border: 1px solid black;

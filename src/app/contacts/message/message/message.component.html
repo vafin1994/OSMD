@@ -26,16 +26,21 @@
             <mat-icon matSuffix>phone</mat-icon>
             <mat-hint translate>msg.enterNumber</mat-hint>
             <mat-error>
-               Введите валидный номер телефона, или оставьте это поле пустым
+                Введите валидный номер телефона, или оставьте это поле пустым
             </mat-error>
         </mat-form-field>
 
     </div>
-        <mat-form-field appearance="outline">
-            <textarea name="message" ngModel matInput> </textarea>
-            <mat-label translate>msg.textOfMessage</mat-label>
-        </mat-form-field>
-    <div  class="button" fxLayoutAlign="center">
-        <button (click)="OnSubmit(mailForm)" [disabled]="mailForm.invalid" mat-raised-button ><div translate>msg.send</div></button>
+    <mat-form-field appearance="outline">
+        <textarea name="message" ngModel matInput> </textarea>
+        <mat-label translate>msg.textOfMessage</mat-label>
+    </mat-form-field>
+    <div class="button" fxLayoutAlign="center">
+        <button (click)="OnSubmit(mailForm)" [disabled]="mailForm.invalid" mat-raised-button>
+            <div translate>msg.send</div>
+        </button>
     </div>
+    <div *ngIf="sent" class="succesfullEmail">Email успешно отправлен и будет обработан в ближайшее время</div>
+    <div *ngIf="error" class="errorEmail">Email не отправлен, попробуйте снова</div>
 </form>
+

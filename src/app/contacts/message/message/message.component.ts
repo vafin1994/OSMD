@@ -7,6 +7,8 @@ import {HttpClient} from '@angular/common/http';
     styleUrls: ['./message.component.css']
 })
 export class MessageComponent implements OnInit {
+    sent = false;
+    error = false;
     constructor(private http: HttpClient) {
     }
     ngOnInit() {
@@ -14,12 +16,15 @@ export class MessageComponent implements OnInit {
 
     OnSubmit(mailForm) {
         console.log(mailForm.value);
-        this.http.post('/assets/mailto.php', 'Hello')
+        this.http.post('/assets/mailto.php', JSON.stringify(mailForm.value) )
             .subscribe(
                 res => {
+                    this.sent = true;
                     console.log(res);
+                    mailForm.reset();
                 },
                 err => {
+                    this.error = true;
                     console.log('Error occured');
                 }
             );

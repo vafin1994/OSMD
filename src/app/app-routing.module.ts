@@ -28,6 +28,7 @@ const routes: Routes = [
     {path: 'article', component: ArticleComponent},
     {path: 'vacancy', component: VacancyComponent},
     {path: '', component: MainComponent},
+    {path: 'ArticleComponent', component: ArticleComponent},
 ];
 
 @NgModule({
