@@ -1,11 +1,11 @@
 <?php
 $dataArr = json_decode($HTTP_RAW_POST_DATA, true);
-$body = "<h2>Email: ". htmlspecialchars(trim($_POST['email']))."</h2>";
-($_POST['name'] != '' && $_POST['name'] != null)? $body .= "<h2>Имя: ". htmlspecialchars(trim($_POST['name']))."</h2>":$body .= "" ;
-($_POST['theme'] != '' && $_POST['theme'] != null)? $body .= "<h2>Тема: ". htmlspecialchars(trim($_POST['name']))."</h2>":$body .= "" ;
-($_POST['phone'] != '' && $_POST['phone'] != null)? $body .= "<h2>Номер телефона: ". htmlspecialchars(trim($_POST['name']))."</h2>":$body .= "" ;
-($_POST['message'] != '' && $_POST['message'] != null)? $body .= "<h2>Текст сообщения: ". htmlspecialchars(trim($_POST['name']))."</h2>":$body .= "" ;
-mail("xoz.od.ua@gmail.com",
+$body = "Email: ". htmlspecialchars(trim($dataArr['email']))."\n";
+($dataArr['name'] != '' && $dataArr['name'] != null)? $body .= "Имя: ". htmlspecialchars(trim($dataArr['name']))."\n":$body .= "" ;
+($dataArr['theme'] != '' && $dataArr['theme'] != null)? $body .= "Тема: ". htmlspecialchars(trim($dataArr['theme']))."\n":$body .= "" ;
+($dataArr['phone'] != '' && $dataArr['phone'] != null)? $body .= "Номер телефона: ". htmlspecialchars(trim($dataArr['phone']))."\n":$body .= "" ;
+($dataArr['message'] != '' && $dataArr['message'] != null)? $body .= "Текст сообщения: ". htmlspecialchars(trim($dataArr['message']))."\n":$body .= "" ;
+mail("uk.xoz17@ukr.net",
     "Письмо с сайта xoz.od.ua",
     $body,
     "From: xoz.od.ua@gmail.com")
