@@ -1,6 +1,11 @@
-*{
-    height: 80vh;
+div{
+    margin: 0px;
+    height: 45vh;
     background-color:#CDE56C;
-    color: white;
     text-align: center;
+    padding: 10%;
+}
+h2{
+    font-size: 30px;
+    color: white;
 }

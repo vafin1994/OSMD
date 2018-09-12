@@ -1,5 +1,5 @@
 .wrap {
-    margin-top: 10px;
+    margin-top: 0px;
     height: 100px;
     background-color: #b5d827ad;
     margin-bottom: 0px;
@@ -21,6 +21,9 @@
 .telNumber{
     padding-left: 0;
 
+}
+p{
+    margin: 0;
 }
 @media (max-width: 100px) {
     .adress {
