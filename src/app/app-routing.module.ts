@@ -12,7 +12,7 @@ import {OsmdCreationComponent} from './osmd-creation/osmd-creation.component';
 import {ArticleComponent} from './news/article/article.component';
 import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
 import {MainComponent} from './main/main.component';
-
+import {ErrorComponent} from './errorPages/error/error.component';
 
 
 const routes: Routes = [
@@ -27,6 +27,7 @@ const routes: Routes = [
     {path: 'login', component: LoginComponent},
     {path: 'article', component: ArticleComponent},
     {path: 'vacancy', component: VacancyComponent},
+    {path: 'error', component: ErrorComponent},
     {path: '', component: MainComponent},
 ];
 

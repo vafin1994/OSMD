@@ -35,6 +35,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {Angular2ImageGalleryModule} from 'angular2-image-gallery';
 import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 import { MainComponent } from './main/main.component';
+import { ErrorComponent } from './errorPages/error/error.component';
 
 
 @NgModule({
@@ -56,6 +57,7 @@ import { MainComponent } from './main/main.component';
         VacancyComponent,
         MessageComponent,
         MainComponent,
+        ErrorComponent,
 
     ],
     imports: [
