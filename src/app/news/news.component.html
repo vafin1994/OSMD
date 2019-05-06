@@ -1,24 +1,21 @@
 <div class="wrap1">
     <div class="img" fxFlex>
-        <h2 translate>news</h2>
+        <h2 translate>Документы</h2>
     </div>
 </div>
 <div class="wrap">
     <div class="flex">
-        <div *ngFor="let n of newsList">
-            <a routerLink="/article">
+        <div>
+            <a target="_blank" href="/assets/ліцензія%20на%20виробництво%20тепла%201198.jpeg">
                 <mat-card>
                     <mat-card-title>
-                        <div class="card-title">{{n.title}}</div>
+                        <div class="card-title">{{newsList.title}}</div>
                         <mat-divider></mat-divider>
                     </mat-card-title>
                     <div class="cardImg">
-                        <img src="{{n.img}}"
-                             alt="{{n.title}} img">
+                        <img src="{{newsList.img}}"
+                             alt="{{newsList.title}} img">
                     </div>
-                    <mat-card-content>
-                        {{n.summary}}
-                    </mat-card-content>
                 </mat-card>
             </a>
         </div>

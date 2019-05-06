@@ -2,15 +2,20 @@
     <div class="wrap">
         <div class="img" fxFlex>
             <h2>
-                Статьи и обьявления
+                Документ
             </h2>
         </div>
     </div>
-    <div class="wrap">
-        <h3 align="center"> {{title}} </h3>
-        <img align="center" src="/assets/shiba2.jpg" alt="Собаки">
-        <p>
-            {{content}}
-        </p>
+    <div style="display:flex; justify-content: center; height: 85vh; width: 1024px; margin:10px auto" class="wrap">
+        <div>
+            <h3> {{title}} </h3>
+            <a target="_blank" href="/assets/ліцензія%20на%20виробництво%20тепла%201198.jpeg">
+                <img style="width: 520px; height: 750px; max-height: 1000px; max-width: 1000px" [src]=this.newsList.img
+                     alt="Лiцензiя">
+            </a>
+            <p>
+                {{content}}
+            </p>
+        </div>
     </div>
 </div>
